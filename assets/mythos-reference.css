@@ -92,3 +92,25 @@ body{background:#0a0d0e!important;color:var(--cream);font-family:Georgia,'Times 
 
 /* Vignettes thématiques sémantiques, chargées depuis le dépôt */
 .thematic-gallery a:before{display:none!important}.thematic-gallery .thematic-thumb{display:block;width:100%;aspect-ratio:1.7;margin-bottom:9px;border:1px solid #776043;background-image:url('/assets/mythos-archaeology-tiles.svg');background-size:600% 200%;background-repeat:no-repeat}.thematic-gallery a:nth-child(1) .thematic-thumb{background-position:40% 0%}.thematic-gallery a:nth-child(2) .thematic-thumb{background-position:80% 100%}.thematic-gallery a:nth-child(3) .thematic-thumb{background-position:100% 100%}.thematic-gallery a:nth-child(4) .thematic-thumb{background-position:20% 100%}.thematic-gallery a:nth-child(5) .thematic-thumb{background-position:60% 0%}.thematic-gallery a:hover .thematic-thumb{filter:brightness(1.18)}
+
+/* Tomes XIII–XXVII : les vignettes de l'édition intégrale suivent la même grille locale */
+.remaining-tomes .volume:nth-child(1) .thumb{background-position:0% 0%!important}
+.remaining-tomes .volume:nth-child(2) .thumb{background-position:20% 0%!important}
+.remaining-tomes .volume:nth-child(3) .thumb{background-position:40% 0%!important}
+.remaining-tomes .volume:nth-child(4) .thumb{background-position:60% 0%!important}
+.remaining-tomes .volume:nth-child(5) .thumb{background-position:80% 0%!important}
+.remaining-tomes .volume:nth-child(6) .thumb{background-position:100% 0%!important}
+.remaining-tomes .volume:nth-child(7) .thumb{background-position:0% 100%!important}
+.remaining-tomes .volume:nth-child(8) .thumb{background-position:20% 100%!important}
+.remaining-tomes .volume:nth-child(9) .thumb{background-position:40% 100%!important}
+.remaining-tomes .volume:nth-child(10) .thumb{background-position:60% 100%!important}
+.remaining-tomes .volume:nth-child(11) .thumb{background-position:80% 100%!important}
+.remaining-tomes .volume:nth-child(12) .thumb{background-position:100% 100%!important}
+.remaining-tomes .volume:nth-child(13) .thumb{background-position:0% 0%!important}
+.remaining-tomes .volume:nth-child(14) .thumb{background-position:20% 0%!important}
+.remaining-tomes .volume:nth-child(15) .thumb{background-position:40% 0%!important}
+.remaining-tomes{border-top:1px solid #6b5438;margin-top:16px;padding-top:10px}
+.remaining-tomes summary{width:fit-content;max-width:100%;transition:color .15s ease}
+.remaining-tomes summary:focus-visible{outline:2px solid #e8c68e;outline-offset:5px}
+.remaining-tomes[open] summary span[aria-hidden]{display:inline-block;transform:rotate(90deg)}
+@media(max-width:600px){.remaining-tomes summary:before,.remaining-tomes summary:after{display:none!important}.remaining-tomes summary{font-size:21px!important;padding:10px 12px!important}}
