@@ -131,3 +131,26 @@ body{background:#0a0d0e!important;color:var(--cream);font-family:Georgia,'Times 
 .volume-grid .volume:focus-visible,.collection-grid a:focus-visible,.archive-tiles a:focus-visible{outline:2px solid #e6c18c;outline-offset:2px}
 @media(max-width:900px){.masthead{grid-template-columns:1fr!important;gap:5px!important;padding:12px 22px!important}.masthead .navlinks{justify-content:flex-start!important;width:100%}.masthead .brand{font-size:30px!important}.hero-archive{min-height:265px!important}}
 @media(max-width:480px){.masthead{padding:10px 16px!important}.masthead .navlinks a{font-size:15px!important}.hero-archive{padding:35px 16px!important}.hero-archive h1{letter-spacing:.025em!important}.container{width:calc(100% - 28px)!important}}
+
+
+/* MYTHOS — accessibilité et lecture responsive, contrôle du 3 novembre 2026 */
+html{scroll-padding-top:22px}
+body{overflow-wrap:break-word}
+main :is(h2,h3,h4)[id],article [id],section[id]{scroll-margin-top:28px}
+:where(.container,.directory) :is(p,li){max-width:78ch}
+:where(.collection-grid,.volume-grid,.archive-tiles) > *{min-width:0}
+:where(.collection-tile,.volume,.archive-tiles a):focus-visible{outline:3px solid #f0d09a!important;outline-offset:3px}
+:where(.collection-tile,.volume,.archive-tiles a):focus-within{border-color:#c6a16b}
+@media(max-width:590px){
+  .collection-grid{grid-template-columns:minmax(0,1fr)!important}
+  .collection-tile{min-height:0!important;padding:18px!important}
+  .collection-tile h3{font-size:clamp(25px,7vw,32px)!important}
+  .hero-archive h1{font-size:clamp(37px,10vw,52px)!important;overflow-wrap:anywhere}
+  .volume-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .volume .thumb{flex-basis:35%!important;width:35%!important}
+}
+@media(max-width:345px){.volume-grid{grid-template-columns:minmax(0,1fr)!important}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto!important}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
