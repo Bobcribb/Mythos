@@ -13,7 +13,7 @@
       "period": "Fin du IVe siècle av. J.-C. (évocation vers 325 av. J.-C.)",
       "image": "/Mythos/assets/reconstitutions-3d/delphes-apollon-panorama.webp",
       "image_type": "Reconstitution 3D photoréaliste interprétative (WebP, 1774 × 887 pixels)",
-      "image_status": "publiée_dans_dépôt__publication_publique_à_vérifier",
+      "image_status": "publiée_et_vérifiée_sur_bobmythos.fr",
       "caption": "Vue panoramique photoréaliste interprétative du sanctuaire d’Apollon à Delphes, au pied du Parnasse, vers la fin du IVe siècle av. J.-C. Le temple, la Voie sacrée, les terrasses et les ensembles monumentaux sont représentés dans leur paysage.",
       "commentary": "Le temple d’Apollon, reconstruit vers 334–333 av. J.-C., dominait la Voie sacrée bordée de trésors et d’offrandes des cités grecques. Le sanctuaire s’étageait sur la pente au pied des Phédriades. Le théâtre et les autres constructions ont connu plusieurs phases : la scène proposée ne doit donc pas être lue comme une photographie d’un état historique unique.",
       "attested": [
@@ -39,7 +39,9 @@
       "historical_crosslinks": [
         "/sites/delphes.html#delphes-panorama",
         "/reconstitutions-3d.html#del-pan-001"
-      ]
+      ],
+      "public_verified_at": "2026-11-04",
+      "public_verified_url": "https://bobmythos.fr/Mythos/assets/reconstitutions-3d/delphes-apollon-panorama.webp"
     },
     {
       "id": "DEL-001",
