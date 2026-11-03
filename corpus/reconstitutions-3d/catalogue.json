@@ -520,6 +520,86 @@
         "/mythologie-grecque.html"
       ],
       "publication_note": "Le SVG est l'illustration publiée; la planche photoréaliste originale n'a pas été chargée sur le site."
+    },
+    {
+      "id": "MES-001",
+      "slug": "messene-asklepieion-210",
+      "region": "Péloponnèse",
+      "subregion": "Messénie",
+      "site": "Messène antique",
+      "monument": "Asclépiéion — cour à portiques et temple central",
+      "period": "Fin du IIIe siècle av. J.-C. ; grand programme après 215/214 av. J.-C.",
+      "image": "/assets/reconstitutions/messene-asklepieion-210-av-jc.svg",
+      "image_type": "Illustration vectorielle originale en perspective simulée 2,5D, non métrique, sans menu",
+      "attested": [
+        "Cour d'environ 71,91 × 66,67 m bordée de quatre portiques à colonnes corinthiennes",
+        "Temple dorique périptère 6 × 12, environ 13,67 × 27,94 m, avec entrée orientale",
+        "Autel à l'est du temple et lieux de représentation civique autour de la cour",
+        "Programme monumental mis en place après les événements de 215/214 av. J.-C."
+      ],
+      "hypothetical": [
+        "Allure globale des couvertures, pigments, volumes latéraux et dimensions relatives des portiques",
+        "Apparence et nombre de figures humaines ; paysage et décoration",
+        "Perspective oblique volontairement non métrique, non exploitable pour mesurer le site"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "ordre_et_colonnades": "élevée",
+        "datation": "élevée à moyenne",
+        "elevations": "moyenne",
+        "couleurs": "faible"
+      },
+      "sources": [
+        "https://www.efamess.gr/en/pois/asklipieio-archaia-messini/",
+        "https://www.ancientmessene.gr/en/asklepieion-complex/",
+        "https://www.jstage.jst.go.jp/article/aija/74/636/74_636_479/_article/-char/en"
+      ],
+      "historical_crosslinks": [
+        "/sites/messene.html#asklepieion",
+        "/reconstitutions-3d.html#mes-001",
+        "/grande-encyclopedie.html"
+      ],
+      "publication_note": "SVG vectoriel original publié dans le dépôt ; la planche photoréaliste créée dans ChatGPT n'est pas incluse à cet enregistrement."
+    },
+    {
+      "id": "MES-002",
+      "slug": "messene-stade-gymnase-iiie-siecle",
+      "region": "Péloponnèse",
+      "subregion": "Messénie",
+      "site": "Messène antique",
+      "monument": "Stade, gymnase et palestre",
+      "period": "Développement initial au IIIe siècle av. J.-C. ; modifications ultérieures hellénistiques et romaines",
+      "image": "/assets/reconstitutions/messene-stade-gymnase-iiie-siecle.svg",
+      "image_type": "Illustration vectorielle originale en perspective simulée 2,5D, non métrique, sans menu",
+      "attested": [
+        "Extrémité septentrionale du stade en fer à cheval et gradins de pierre",
+        "Dix-huit rangées de sièges dans le secteur nord",
+        "Trois portiques doriques associés au gymnase, dont un portique nord double",
+        "Palestre approximativement carrée (environ 30 m de côté), avec cour péristyle et pièces adjacentes"
+      ],
+      "hypothetical": [
+        "État architectural complet choisi comme évocation du IIIe siècle av. J.-C. sans reconstituer les remaniements romains",
+        "Toitures, élévations, surfaces, végétation et personnages",
+        "Orientation et forme en perspective schématisées, non un relevé photogrammétrique"
+      ],
+      "certainty": {
+        "organisation_generale": "élevée",
+        "gradins": "élevée",
+        "portiques": "élevée",
+        "toitures_et_elevations": "faible à moyenne",
+        "representations": "faible"
+      },
+      "sources": [
+        "https://www.efamess.gr/en/pois/gymnasio-stadio-archaia-messini/",
+        "https://www.ancientmessene.gr/en/middle-school-stadium-gymnasium-complex/",
+        "https://ajaonline.org/article/4378/"
+      ],
+      "historical_crosslinks": [
+        "/sites/messene.html#stade-gymnase",
+        "/reconstitutions-3d.html#mes-002",
+        "/grande-encyclopedie.html"
+      ],
+      "publication_note": "SVG original en perspective 2,5D ; les statues et autres décors spécifiques non conservés ne sont pas revendiqués comme attestés."
     }
   ]
 }
