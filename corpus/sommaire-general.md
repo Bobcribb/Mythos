@@ -44,6 +44,8 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 - **TH-02-LEM — Trois scènes modernes [C]** : [créations contemporaines](theatre-grec/comedies/lemniai-scenes-modernes.html), distinctes de l’étude. [Manuscrit source historique complet (volume XXX)](theatre-grec/comedies/lemniai-source.md).
 - **TH-03-GER — Aristophane, *Gēras* (La Vieillesse), volume XXXI** : [étude intégrale, 19 sections](theatre-grec/comedies/geras-etude.html), sources et bibliographie.
 - **TH-02-GER — Gēras, trois scènes [C] contemporaines** : [scènes distinctes](theatre-grec/comedies/geras-scenes-modernes.html) ; [manuscrit historique original intégral, 22 sections](theatre-grec/comedies/geras-source.md).
+- **TH-03-PL1 — Aristophane, *Ploutos I* (volume historique XXXII)** : [étude critique intégrale (19 sections)](theatre-grec/comedies/ploutos-protos-etude.html), sources et bibliographie.
+- **TH-02-PL1 — Trois scènes contemporaines [C]** : [créations modernes distinctes](theatre-grec/comedies/ploutos-protos-scenes-modernes.html) ; [manuscrit historique intégral (22 sections)](theatre-grec/comedies/ploutos-protos-source.md).
 - **TH-03-TRI — Aristophane, *Triphalēs* (volume historique XXXIII)** : [étude critique intégrale (19 sections)](theatre-grec/comedies/triphales-etude.html), sources et bibliographie.
 - **TH-02-TRI — Trois scènes [C] contemporaines** : [scènes distinctes](theatre-grec/comedies/triphales-scenes-modernes.html), [manuscrit intégral (22 sections)](theatre-grec/comedies/triphales-source.md).
 - Les textes perdus, fragments et reconstitutions doivent être signalés distinctement.
@@ -64,3 +66,9 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 3. Ne pas dupliquer les études déjà transférées.
 4. Distinguer sources antiques, faits attestés, variantes, hypothèses et reconstitutions.
 5. La présence d'une rubrique dans ce sommaire **ne signifie pas** que son corpus complet est transféré.
+
+### État de contrôle du catalogue — 3 novembre 2026
+- Les lecteurs *Ploutos I* et *Triphalēs* sont présents dans GitHub et dans le sommaire HTML ; leur inscription dans ce sommaire Markdown a été harmonisée.
+- Les archives enregistrées comme intégrées ne constituent pas un certificat d'accès public : le déploiement sur `bobmythos.fr` et l'affichage des URL doivent être contrôlés séparément.
+- Les manuscrits encore recensés dans [le registre de récupération](mythologie-grecque/REGISTRE-RECUPERATION.md), dont Chiron et les chapitres 118–133 et 218–224, ne doivent pas être marqués publiés avant la récupération et la comparaison de leur texte intégral.
+- Les rubriques GE et MC ont des entrées structurelles, sans inventaire exhaustif certifié de leurs volumes : leur complétude reste à auditer.
