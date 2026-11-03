@@ -35,3 +35,18 @@ Le contrôle porte sur **l'intégrité textuelle et la navigation**, non sur la 
 - **Limite de vérification :** le commit CSS peut être confirmé dans GitHub ; aucune capture navigateur réelle ni validation visuelle du déploiement public n'a été réalisée dans cette exécution.
 
 **Action éditoriale suivante :** retrouver le fichier source intégral d'un volume non publié, puis vérifier titres, début, fin, notes, bibliographie et correspondance textuelle avant toute mise en ligne.
+
+
+## Iconographie philosophique — contrôle de l'exécution du 3 novembre 2026
+
+**Pages réellement identifiées dans `main` :** `/philosophie-iliade.html` (12 sections d'étude), `/philosophie-odyssee.html` (12 sections) et `/philosophie-theogonie.html` (13 sections). Chacune contenait trois figures documentaires avant cette opération. Le document `contenus/philosophie/homere-hesiode-dossier-preparatoire.md` reste séparé, sans duplication de ses paragraphes.
+
+**Ajouts vérifiés après écriture GitHub :**
+- `/assets/philosophie/iliade-parcours-ethique.svg` inséré dans `/philosophie-iliade.html` — mênis, choix de la destinée, violence contre Hector, reconnaissance avec Priam.
+- `/assets/philosophie/odyssee-identite-reconnaissance.svg` inséré dans `/philosophie-odyssee.html` — Calypso, mêtis, cicatrice, lit conjugal.
+- `/assets/philosophie/theogonie-succession-pouvoir.svg` inséré dans `/philosophie-theogonie.html` — puissance primordiale, Ouranos, Cronos et Zeus.
+- `/assets/mythos-iconographie.css` enrichi d'un affichage adapté au format des schémas et d'un lien de zoom accessible.
+
+**Statut documentaire :** trois schémas vectoriels originaux édités en 2026 ; ni photographies antiques ni rendus produits par intelligence artificielle. Chaque page contient désormais quatre figures balisées en HTML (trois iconographies documentaires préexistantes + un schéma nouveau). Les SVG portent leurs références aux passages homériques ou hésiodiques ; les textes des études, titres et ancres ont été préservés. Les nombres 12, 12 et 13 désignent des sections, **pas** un nombre de pages A4 certifié : l'exigence de dix pages imprimées par étude reste à vérifier par un contrôle de pagination.
+
+**Vérification :** fichiers et insertions relus depuis l'API GitHub après les commits ; exécution GitHub Pages `41644417144` terminée avec conclusion `success` sur `e7718f2dd656d3cdf1fc4bafb3aa168286638748`. L'accès public au domaine `bobmythos.fr` et le rendu sur navigateur n'ont pas pu être vérifiés via le réseau de cette exécution. Ne pas assimiler le build réussi à une inspection visuelle. L'enrichissement des autres pages se poursuit à partir du catalogue existant `assets/mythos-iconographie.js` ; éviter les doublons de visuels déjà déclarés.
