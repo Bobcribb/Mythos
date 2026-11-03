@@ -21,6 +21,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configurer Pages
         uses: actions/configure-pages@v5
+      - name: Générer les lectures intégrales de Daidalos et vérifier leur source
+        run: python3 scripts/build-daidalos.py
       - name: Vérifier les pages essentielles
         run: |
           test -s index.html
@@ -41,6 +43,9 @@ jobs:
           grep -q 'id="bibliographie"' corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html
           grep -q 'id="bibliographie"' corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html
           grep -q 'conv-tome-XXXIII-chapitres-403-410.html' origines-du-sacre.html
+          test -s corpus/theatre-grec/comedies/daidalos-etude.html
+          test -s corpus/theatre-grec/comedies/daidalos-scenes-modernes.html
+          test -s corpus/theatre-grec/comedies/daidalos-controle.json
           echo "Pages MYTHOS présentes dans l'artefact"
       - name: Préparer les fichiers
         uses: actions/upload-pages-artifact@v3
