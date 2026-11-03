@@ -98,3 +98,26 @@ Utilisation de `assets/mythos-theatre.css` et du motif décoratif local `assets/
 
 ### Contrôle continu et limites
 Le vérificateur `python3 scripts/check-aiolosikon.py` recalcule l'empreinte Git du manuscrit (byte-for-byte), confronte le texte lisible des 17 sections et le préambule aux pages HTML, contrôle les ancrages et les fichiers des liens locaux, et produit `aiolosikon-controle.json`. L'étape est insérée avant la publication dans `.github/workflows/pages.yml` ; elle bloque le déploiement en cas de régression. Cette intégration **ne constitue pas une collation philologique indépendante** des textes antiques, ni une attestation d'affichage du domaine public avant le succès de Pages. Aucune suppression de fichier ou modification des autres automations MYTHOS.
+
+
+## 3 novembre 2026 — *Holkades* (Aristophane), volume historique XXIX
+
+### Source intégrale, contrôle préalable et provenance
+
+Le manuscrit existait dans le dépôt historique `Bobcribb/Bobcribb.github.io`, sous le chemin `chapitres/comedies/volume-029-aristophane-holkades.md`, avec le blob Git `775999ca4ba7bbeb668802eb8b7dfc7f56643a93`. Le contrôle de l'arbre du dépôt `Bobcribb/Mythos` avant transfert n'identifiait ni `holkades-source.md` ni les deux pages `holkades-*.html` : il s'agit d'une **nouvelle intégration sur MYTHOS**, non d'une nouvelle composition ni d'une découverte de vers antiques.
+
+- **Archive complète** : [holkades-source.md](comedies/holkades-source.md), copie textuelle sans réécriture, **12 387 caractères**, 19 sections numérotées, front matter, préambule, bibliographie et notes finales conservés.
+- **TH-03-HOL — Étude critique** : [holkades-etude.html](comedies/holkades-etude.html), **16 sections** (1–14 et 18–19), avec préambule, sources antiques, analyses et bibliographie.
+- **TH-02-HOL — Scènes littéraires contemporaines** : [holkades-scenes-modernes.html](comedies/holkades-scenes-modernes.html), **3 sections** (15–17) explicitement identifiées comme créations modernes. Ces scènes ne constituent ni fragments grecs ni reconstitutions certifiées d'Aristophane.
+
+### Relecture et navigation
+
+Les 19 sections ont été confrontées au manuscrit d'origine : le texte lisible après interprétation des marques Markdown correspond au texte des deux parcours sans résumé, omission ou duplication. Les liens historiques du préambule vers Théâtre et Philosophie ont été adaptés aux rubriques effectives ; le volume XXVIII pointe vers l'étude `aiolosikon-etude.html`, tandis que le volume XXX, non encore migré, pointe explicitement vers le dépôt historique. Le fichier source conserve **tous ses liens initiaux**.
+
+Les nouvelles pages utilisent `assets/mythos-theatre.css` et `assets/mythos-hero.svg` (bandeau sombre à statue stylisée gauche, temple droite). Elles présentent des sommaires cliquables, navigation sur téléphone, sources en accès direct, bibliographie et liens réciproques entre étude et créations. Des cartes illustrées et liens ont été ajoutés dans `theatre-grec.html`, `philosophie.html` (étude seulement), `sommaire-general.html`, `corpus/sommaire-general.md` et `index.html`. Le lecteur du volume précédent `aiolosikon-etude.html` renvoie au volume XXIX.
+
+Le script [check-holkades.py](../../scripts/check-holkades.py), déclenché avant publication par `.github/workflows/pages.yml`, vérifie l'empreinte exacte du manuscrit, la partition des 19 sections, l'identité des textes lisibles et du préambule, les ancres, la présence des fichiers cibles et les liens de navigation. Il bloque le déploiement en cas de régression et produit `holkades-controle.json` dans l'artefact Pages.
+
+### Limites scientifiques et techniques
+
+Le contrôle porte sur la fidélité de l'intégration et le fonctionnement des liens, **non** sur la collation philologique exhaustive de *Poetae Comici Graeci* III.2. Aucune réplique nouvelle n'a été ajoutée. Le rendu sur le domaine public dépend de la réussite du déploiement GitHub Pages et doit être confirmé indépendamment. Le dépôt historique, les archives antérieures et les autres automatisations MYTHOS restent inchangés.
