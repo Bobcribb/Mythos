@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Generate one MYTHOS image using OpenAI Images API; write assets and gallery."""
-import base64, json, os, pathlib, urllib.request
+import base64, json, os, pathlib, urllib.request, urllib.error, time
 from datetime import datetime, timezone
 root=pathlib.Path(__file__).resolve().parents[1]
 items=[
@@ -33,7 +33,28 @@ prompt=(f"Photorealistic archaeological 3D-rendered reconstruction of {title}, {
 "This is an interpretive artistic reconstruction, not a metrically exact survey.")
 payload={"model":"gpt-image-1","prompt":prompt,"size":"1536x1024","quality":"medium","output_format":"webp","output_compression":85,"n":1}
 req=urllib.request.Request("https://api.openai.com/v1/images/generations",data=json.dumps(payload).encode(),headers={"Authorization":"Bearer "+os.environ["OPENAI_API_KEY"],"Content-Type":"application/json"},method="POST")
-with urllib.request.urlopen(req,timeout=240) as response: result=json.load(response)
+# Diagnose rate limiting versus billing/quota errors without displaying credentials.
+result = None
+for attempt in range(3):
+    try:
+        with urllib.request.urlopen(req,timeout=240) as response:
+            result=json.load(response)
+        break
+    except urllib.error.HTTPError as exc:
+        try:
+            details=json.loads(exc.read().decode("utf-8")).get("error",{})
+        except (ValueError, UnicodeDecodeError):
+            details={}
+        code=str(details.get("code") or details.get("type") or "unknown")
+        message=str(details.get("message") or "")[:350].replace("\\n"," ")
+        print(f"OpenAI image API HTTP {exc.code}: {code}: {message}",flush=True)
+        # A depleted billing balance is not a transient rate limit.
+        if exc.code == 429 and code in ("rate_limit_exceeded","rate_limit_error","requests_rate_limit_exceeded") and attempt < 2:
+            time.sleep(20 * (attempt + 1))
+            continue
+        raise SystemExit("API image generation not completed; no image or gallery was published.")
+if result is None:
+    raise SystemExit("Generation unavailable; nothing published.")
 raw=base64.b64decode(result["data"][0]["b64_json"])
 dest=root/"assets/reconstitutions-3d"/(slug+".webp")
 dest.write_bytes(raw)
