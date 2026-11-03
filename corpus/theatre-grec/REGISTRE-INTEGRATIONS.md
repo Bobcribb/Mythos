@@ -80,3 +80,21 @@ Archive conservée textuellement : [kokalos-source.md](comedies/kokalos-source.m
 
 ### Limites
 La fidélité de l'archive et la répartition de ses sections ont été contrôlées par relecture GitHub. Les paragraphes dans les lecteurs sont affichés avec leur syntaxe Markdown d'origine pour éviter toute reformulation ; ce n'est pas une nouvelle édition philologique. Ni la collation exhaustive des sources anciennes ni le rendu visuel et le déploiement effectif sur le domaine public n'ont été certifiés dans cette intervention. Aucun ancien manuscrit n'a été écrasé, aucun autre dépôt ni aucune automatisation MYTHOS n'a été modifié.
+
+
+## 3 novembre 2026 — *Aiolosikōn* d'Aristophane, volume historique XXVIII — TH-COM-AIO
+
+### Contrôle d'antériorité, provenance, intégralité
+Avant le transfert, le fichier `aiolosikon-source.md` et les deux lecteurs `aiolosikon-*.html` étaient absents du catalogue des fichiers de `Bobcribb/Mythos` ; une archive du dossier existait dans `Bobcribb/Bobcribb.github.io/chapitres/comedies/volume-028-aristophane-aiolosikon.md`. Manuscrit historique : **blob Git `e4b75423fe8691c74594b31b4af5a158da64b947`**. Le même blob a été retrouvé après copie dans `corpus/theatre-grec/comedies/aiolosikon-source.md` : **11 173 caractères, 17 sections numérotées I à XVII**. Il s'agit d'un **travail universitaire moderne sur une comédie perdue**, non d'une restitution antique authentique.
+
+### Classement, deux lectures sans doublons
+- **TH-03-AIO**, [étude intégrale](comedies/aiolosikon-etude.html) : sections I–XII puis XV–XVII, soit **15 sections**, avec introduction méthodologique et texte complet de la section XVII « Sources primaires et bibliographie de vérification ». Thèmes : titre et lacunes, traditions d'Éole, tragédie perdue d'Euripide, parenté, normes familiales et comparaisons Hegel, Nietzsche, Vernant, Détienne et Dumézil.
+- **TH-02-AIO**, [créations modernes](comedies/aiolosikon-scenes-modernes.html) : sections XIII–XIV, soit **deux scènes** préexistantes au transfert. Les personnages et répliques sont explicitement modernes et jamais attribués à Aristophane.
+- La [copie source](comedies/aiolosikon-source.md) conserve sans altération l'ensemble du manuscrit et ses liens historiques. Les liens source internes de l'interface renvoient au vrai classement MYTHOS ; le lien vers le tome XXIX non encore intégré renvoie expressément au dépôt historique, non à une fausse page MYTHOS.
+- Chaque section apparaît dans **une seule des deux lectures**. Un contrôle préalable à l'écriture a comparé, pour **17/17 sections**, le texte lisible des paragraphes HTML au texte Markdown d'origine après seule suppression des marqueurs de style Markdown. Les sources citées et les réserves de collation sont conservées.
+
+### Graphisme et circulation
+Utilisation de `assets/mythos-theatre.css` et du motif décoratif local `assets/mythos-hero.svg` (statue grecque à gauche, temple à droite) ; lecteur sombre à filets dorés, sommaire latéral ancré, mode mobile et liens clavier, styles d'impression. Cartes illustrées ajoutées à `theatre-grec.html` et `philosophie.html`, entrée au `sommaire-general.html` et à l'accueil. Navettes entre étude et scènes, renvoi vers le volume XXVII `Kôkalos`, et renvoi réciproque depuis le lecteur de Kôkalos. Le sommaire général avait une ouverture d'article HTML manquante autour de la carte Philosophie ; correction effectuée au passage.
+
+### Contrôle continu et limites
+Le vérificateur `python3 scripts/check-aiolosikon.py` recalcule l'empreinte Git du manuscrit (byte-for-byte), confronte le texte lisible des 17 sections et le préambule aux pages HTML, contrôle les ancrages et les fichiers des liens locaux, et produit `aiolosikon-controle.json`. L'étape est insérée avant la publication dans `.github/workflows/pages.yml` ; elle bloque le déploiement en cas de régression. Cette intégration **ne constitue pas une collation philologique indépendante** des textes antiques, ni une attestation d'affichage du domaine public avant le succès de Pages. Aucune suppression de fichier ou modification des autres automations MYTHOS.
