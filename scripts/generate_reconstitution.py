@@ -4,6 +4,19 @@ import base64, json, os, pathlib, urllib.request, urllib.error, time
 from datetime import datetime, timezone
 root=pathlib.Path(__file__).resolve().parents[1]
 items=[
+("delphes-apollon","Delphes — sanctuaire et temple d'Apollon","Phocide","IVe siècle av. J.-C."),
+("nemee-zeus","Némée — temple de Zeus","Argolide","vers 330 av. J.-C."),
+("corinthe-apollon","Corinthe — temple d'Apollon","Corinthie","vers 540 av. J.-C."),
+("messene-asklepieion","Messène — Asclépieion","Messénie","IIIe siècle av. J.-C."),
+("sounion-poseidon","Sounion — temple de Poséidon","Attique","vers 440 av. J.-C."),
+("brauron-artemis","Brauron — sanctuaire d'Artémis","Attique","Ve siècle av. J.-C."),
+("dodone-theatre","Dodone — théâtre et sanctuaire de Zeus","Épire","IIIe siècle av. J.-C."),
+("bassae-apollon","Bassae — temple d'Apollon Épicourios","Arcadie","vers 420–400 av. J.-C."),
+("mycenes-citadelle","Mycènes — porte des Lionnes et citadelle","Argolide","XIIIe siècle av. J.-C."),
+("olympie-zeus","Olympie — temple de Zeus","Élide","Ve siècle av. J.-C."),
+("epidaure-asclepios","Épidaure — sanctuaire d'Asclépios","Argolide","IVe siècle av. J.-C."),
+("epidaure-theatre","Épidaure — théâtre et panorama","Argolide","IVe siècle av. J.-C."),
+("tirynthe-citadelle","Tirynthe — palais fortifié mycénien","Argolide","XIIIe siècle av. J.-C."),
 ("athenes-acropole","Athènes — Acropole classique","Attique","Ve siècle av. J.-C."),
 ("eleusis-telesterion","Éleusis — Télestérion","Attique","Ve–IVe siècle av. J.-C."),
 ("delos-sanctuaire","Délos — sanctuaire d'Apollon","Cyclades","IIIe–IIe siècle av. J.-C."),
@@ -15,11 +28,23 @@ items=[
 ("thermos-apollon","Thermos — temple d'Apollon","Étolie","VIIe–VIe siècle av. J.-C."),
 ("argos-theatre","Argos — théâtre","Argolide","IIIe siècle av. J.-C."),
 ("olynthe-quartier","Olynthe — quartier résidentiel","Chalcidique","IVe siècle av. J.-C."),
-("priene-agora","Priène — agora","Ionie antique","IVe siècle av. J.-C.")
+("priene-agora","Priène — agora","Ionie antique","IVe siècle av. J.-C."),
+("samos-heraion","Samos — Héraion et temple de Rhoikos","Samos","vers 570–560 av. J.-C.")
 ]
 # Institutional sources for documented chronology and archaeological context.
 # These references do not certify AI-generated details (elevations, polychromy, layout).
 references = {
+    "delphes-apollon": "https://whc.unesco.org/en/list/393/",
+    "nemee-zeus": "https://nemeacenter.berkeley.edu/ancient-nemea/temple-zeus",
+    "corinthe-apollon": "https://www.ascsa.edu.gr/excavations/ancient-corinth/about-the-excavations-1",
+    "sounion-poseidon": "https://perseus-aa.github.io/items/aa_373.html",
+    "bassae-apollon": "https://whc.unesco.org/en/list/392/",
+    "mycenes-citadelle": "https://whc.unesco.org/en/list/941/",
+    "olympie-zeus": "https://whc.unesco.org/en/list/517/",
+    "epidaure-asclepios": "https://whc.unesco.org/en/list/491/",
+    "epidaure-theatre": "https://whc.unesco.org/en/list/491/",
+    "tirynthe-citadelle": "https://whc.unesco.org/en/list/941/",
+    "samos-heraion": "https://whc.unesco.org/en/list/595/",
     "athenes-acropole": "https://whc.unesco.org/en/list/404/",
     "delos-sanctuaire": "https://whc.unesco.org/en/list/530/",
     "knossos-palais": "https://whc.unesco.org/en/list/1733/",
