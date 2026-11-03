@@ -1,0 +1,27 @@
+name: MYTHOS — diagnostic GitHub Pages et domaine
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/diagnostic-pages-domain.yml'
+
+permissions:
+  contents: read
+  pages: read
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Lire la configuration GitHub Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -eu
+          curl -sS -D /tmp/pages-headers.txt             -H "Accept: application/vnd.github+json"             -H "Authorization: Bearer ${GH_TOKEN}"             -H "X-GitHub-Api-Version: 2026-03-10"             "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages"             -o /tmp/pages.json || true
+          echo "=== GET /pages ==="
+          cat /tmp/pages-headers.txt
+          cat /tmp/pages.json
+          echo
