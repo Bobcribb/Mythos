@@ -1,18 +1,25 @@
 # MYTHOS — Sommaire général de référence
 
-Cette arborescence reprend le classement éditorial précédemment demandé. Les **cotes sont nouvelles**, indépendantes des numéros historiques. Les fichiers existants sont conservés à leur emplacement ; les liens ci-dessous désignent uniquement les documents effectivement importés.
+Les cotes éditoriales sont propres à chaque collection. La mythologie grecque est **autonome** et ne dépend ni de la Grande encyclopédie ni de la mythologie comparée. Les archives originales ne sont pas renumérotées ni écrasées.
 
-## GE — Grande encyclopédie
-- **GE-01 — Mythologie grecque**
-  - **GE-01.01 — Cosmogonie et Théogonie** : [Hésiode](../mythologie-grecque/archives/livre-hesiode.html)
-  - **GE-01.02 — Dieux et divinités** : [Encyclopédie des dieux](../mythologie-grecque/archives/livre-dieux.html)
-  - **GE-01.03 — Héros et héroïnes** : [Monographies](../mythologie-grecque/archives/monographies.html), [Héraclès](../mythologie-grecque/archives/livre-heracles.html)
-  - **GE-01.04 — Cycles et récits mythologiques** : [Guerre de Troie](../mythologie-grecque/archives/livre-troie.html), [Odyssée](../mythologie-grecque/archives/livre-odyssee.html)
-  - **GE-01.05 — Sources, variantes et transmission** : [Index de continuité 216–224](../mythologie-grecque/05-sources-et-variantes/index-historique-216-224.md)
-  - **GE-01.06 — Géographie, cultes et iconographie** : [Atlas](../mythologie-grecque/archives/atlas-mythologique.html), [Cultes et cités](../mythologie-grecque/archives/cultes-cites.html)
-  - **GE-01.07 — Bibliothèque et orientation** : [Bibliothèque](../mythologie-grecque/archives/bibliotheque.html)
-- **GE-02 — Mythologie comparée** : classement propre à développer, notamment Dumézil ; ne pas fusionner avec la mythologie grecque.
-- **GE-03 — Civilisations du monde** : dossiers historiques et religieux comparés.
+## MG — Mythologie grecque (collection autonome)
+- **MG-01 — Cosmogonie et Théogonie** : [Hésiode](mythologie-grecque/archives/livre-hesiode.html)
+- **MG-02 — Dieux et divinités** : [Encyclopédie des dieux](mythologie-grecque/archives/livre-dieux.html)
+- **MG-03 — Héros et héroïnes** : [Monographies](mythologie-grecque/archives/monographies.html), [Héraclès](mythologie-grecque/archives/livre-heracles.html)
+- **MG-04 — Cycles et récits** : [Thèbes](mythologie-grecque/archives/livre-thebes.html), [Argonautiques](mythologie-grecque/archives/livre-argonautiques.html), [Troie](mythologie-grecque/archives/livre-troie.html), [Odyssée](mythologie-grecque/archives/livre-odyssee.html)
+- **MG-05 — Sources et historiographie** : [Méthodes](mythologie-grecque/archives/sources-methodes.html), [Historiographie](mythologie-grecque/archives/historiographie-v6.html), [Index 216–224](mythologie-grecque/05-sources-et-variantes/index-historique-216-224.md)
+- **MG-06 — Géographie et cultes** : [Atlas](mythologie-grecque/archives/atlas-mythologique.html), [Cultes et cités](mythologie-grecque/archives/cultes-cites.html)
+- **MG-07 — Bibliothèque** : [Bibliothèque grecque](mythologie-grecque/archives/bibliotheque.html), [Bibliothèque historique générale](mythologie-grecque/archives/MYTHOS_bibliotheque_navigable.html)
+- **Récupération en cours** : [Registre des chapitres encore à retrouver](mythologie-grecque/REGISTRE-RECUPERATION.md)
+
+## GE — Grande encyclopédie (collection distincte)
+- Études encyclopédiques transversales, sans intégrer automatiquement les textes de la collection MG.
+
+## MC — Mythologie comparée (collection distincte)
+- Études comparatives, notamment Dumézil.
+
+## CIV — Civilisations du monde (collection distincte)
+- Dossiers historiques et religieux comparés.
 
 ## ODS — Origines du sacré
 - **ODS-01 — Édition intégrale retrouvée, tomes I–XXVII** : [Lire les tomes](../origines-du-sacre/edition-integrale-tomes-I-XXVII.html).
