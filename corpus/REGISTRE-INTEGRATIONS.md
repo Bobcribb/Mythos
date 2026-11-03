@@ -50,3 +50,16 @@ Le contrôle porte sur **l'intégrité textuelle et la navigation**, non sur la 
 **Statut documentaire :** trois schémas vectoriels originaux édités en 2026 ; ni photographies antiques ni rendus produits par intelligence artificielle. Chaque page contient désormais quatre figures balisées en HTML (trois iconographies documentaires préexistantes + un schéma nouveau). Les SVG portent leurs références aux passages homériques ou hésiodiques ; les textes des études, titres et ancres ont été préservés. Les nombres 12, 12 et 13 désignent des sections, **pas** un nombre de pages A4 certifié : l'exigence de dix pages imprimées par étude reste à vérifier par un contrôle de pagination.
 
 **Vérification :** fichiers et insertions relus depuis l'API GitHub après les commits ; exécution GitHub Pages `41644417144` terminée avec conclusion `success` sur `e7718f2dd656d3cdf1fc4bafb3aa168286638748`. L'accès public au domaine `bobmythos.fr` et le rendu sur navigateur n'ont pas pu être vérifiés via le réseau de cette exécution. Ne pas assimiler le build réussi à une inspection visuelle. L'enrichissement des autres pages se poursuit à partir du catalogue existant `assets/mythos-iconographie.js` ; éviter les doublons de visuels déjà déclarés.
+
+
+## 3 novembre 2026 — Intégration ODS-S28 : tome XXVIII
+
+| Cote | Document source | Fichiers sur GitHub | Contrôle d'intégrité |
+|---|---|---|---|
+| **ODS-S28** | `MYTHOS_Origines_du_sacre_Tome_XXVIII_Ch363-370_2026-11-01.md` (Bibliothèque, dossier `MYTHOS-suivi-editorial`, 1er novembre 2026) | [Page de lecture](origines-du-sacre/tome-XXVIII-chapitres-363-370.html) ; [copie Markdown exacte](origines-du-sacre/tome-XXVIII-chapitres-363-370.md) | Source complète lue : **54 221 caractères**, 379 lignes, huit chapitres **363–370**, bibliographie **[S1]–[S19]** et état éditorial terminal conservés. La copie Markdown a été relue depuis GitHub et comparée caractère par caractère à la source : identité exacte. La version HTML est une conversion de lecture avec sommaire, sans suppression volontaire de texte, plus avertissement éditorial ajouté. |
+
+Cette livraison appartient à la **série de suivi** des *Origines du sacré*. Les cotes `ODS-Sxx` distinguent cette série de l'édition cumulative I–XXVII, dont la numérotation ne doit pas être recalculée sans concordance critique. Le manuscrit source était signalé comme non publié sur WordPress au 1er novembre ; il est désormais transféré sur la branche par défaut GitHub au 3 novembre. Son avertissement originel est reproduit tel quel, avec cette clarification en tête de l'HTML.
+
+**Vérifications effectuées :** URL du document source GitHub accessible dans le dépôt ; HTML récupéré de GitHub après création et comparé exactement à la chaîne écrite ; dix liens de sommaire pointent vers des en-têtes générés, dont huit chapitres. Index ODS, sommaire général et page d'accueil mis à jour. **Contrôles restant nécessaires :** bibliographie et identifications scientifiques, apparence navigateur, liens externes, déploiement sur `bobmythos.fr`.
+
+**Aucun doublon des tomes existants n'a été créé.** Les archives historiques I–XXVII restent inchangées.
