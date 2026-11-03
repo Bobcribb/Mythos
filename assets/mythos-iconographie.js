@@ -99,9 +99,31 @@ masque:{
  reading:"Théâtre : rôle, persona et représentation ; cet objet n’est pas une preuve directe des costumes des tragédies d’Eschyle.",
  status:"Objet antique · photographie moderne · aucune génération IA.",
  credit:"Photographie : Alf van Beem / Wikimedia Commons ; domaine public."
-}
+},
+behistun:{file:"Darius (Behistun relief).jpg",title:"Darius Ier : relief de Behistun",work:"Relief achéménide, fin du VIe siècle av. J.-C.",reading:"Source visuelle de légitimation royale, à comparer au texte trilingue.",status:"Relief antique ; photo documentaire, non IA.",credit:"Leen van Dorp / Livius.org, Wikimedia Commons ; CC0."},
+delphi:{file:"Delphi - Temple of Apollo.jpg",title:"Temple d’Apollon à Delphes",work:"Ruines du sanctuaire, Phocide ; photo de 2013.",reading:"Vestiges conservés, et non reconstitution du sanctuaire antique.",status:"Vestiges antiques ; photo moderne, non IA.",credit:"Ronny Siegel / Wikimedia Commons ; CC BY 3.0.",license:"https://creativecommons.org/licenses/by/3.0/"},
+aphrodite:{file:"Venus de Milo Louvre Ma399 n6.jpg",title:"Aphrodite de Mélos",work:"Statue hellénistique vers 130–100 av. J.-C., musée du Louvre, Ma 399.",reading:"Document d’iconographie tardive, non une représentation directe du récit d’Hésiode.",status:"Sculpture antique ; photo non IA.",credit:"Jastrow / Wikimedia Commons ; domaine public."},
+heracles:{file:"Herakles lion Louvre F33.jpg",title:"Héraclès et le lion de Némée",work:"Amphore attique à figures noires, v. 540 av. J.-C., Louvre F 33.",reading:"Réception figurée d’un travail héroïque.",status:"Vase antique ; photo non IA.",credit:"Wikimedia Commons ; voir notice de fichier pour le crédit et la licence."},
+jason:{file:"Jason Pelias Louvre K127.jpg",title:"Jason apporte la Toison d’or à Pélias",work:"Cratère apulien à figures rouges, v. 340–330 av. J.-C., Louvre K 127.",reading:"Témoignage italiote sur les traditions argonautiques.",status:"Vase antique ; photo non IA.",credit:"Wikimedia Commons ; voir notice de fichier pour le crédit et la licence."},
+cadmus:{file:"Kadmos dragon Louvre E707.jpg",title:"Cadmos et le serpent",work:"Amphore eubéenne à figures noires, v. 560–550 av. J.-C., Louvre E 707.",reading:"Image antique d’un motif du cycle thébain.",status:"Vase antique ; photo non IA.",credit:"Wikimedia Commons ; voir notice de fichier pour le crédit et la licence."},
 };
 const galleries={
+"/corpus/civilisations/perse-iran-ancien-behistun.html":["behistun"],
+"/corpus/mythologie-grecque/02-dieux-et-divinites/aphrodite-etude-integrale.html":["aphrodite"],
+"/corpus/mythologie-grecque/archives/MYTHOS_bibliotheque_navigable.html":["achille","rhea","enuma"],
+"/corpus/mythologie-grecque/archives/atlas-mythologique.html":["delphi"],
+"/corpus/mythologie-grecque/archives/bibliotheque.html":["achille","sirenes"],
+"/corpus/mythologie-grecque/archives/cultes-cites.html":["delphi","rhea"],
+"/corpus/mythologie-grecque/archives/historiographie-v6.html":["hunefer","enuma"],
+"/corpus/mythologie-grecque/archives/livre-argonautiques.html":["jason"],
+"/corpus/mythologie-grecque/archives/livre-dieux.html":["typhon","rhea"],
+"/corpus/mythologie-grecque/archives/livre-heracles.html":["heracles"],
+"/corpus/mythologie-grecque/archives/livre-thebes.html":["cadmus"],
+"/corpus/mythologie-grecque/archives/monographies.html":["achille","rhea"],
+"/corpus/mythologie-grecque/archives/sources-methodes.html":["enuma","hunefer"],
+"/reconstitutions-3d.html":["delphi","lascaux"],
+"/sites/delphes.html":["delphi"],
+
 "/index.html":["achille","sirenes","rhea"],
 "/philosophie.html":["achille","sirenes","rhea"],
 "/mythologie-grecque.html":["typhon","achille","sirenes"],
@@ -163,7 +185,7 @@ function run(){
   gall.forEach(k=>{const item=fig(k);if(item)grid.append(item);});
   s.append(grid);
   // Le bloc est ajouté dans le flux éditorial sans remplacer aucun texte.
-  head.insertBefore(s,head.firstElementChild);
+  const toc=head.querySelector(".book-toc"); const t=head.querySelector(".page-title"); if(toc)toc.insertAdjacentElement("afterend",s); else if(t)t.insertAdjacentElement("afterend",s); else head.insertBefore(s,head.firstElementChild);
  }
  const places=chapterGalleries[path]||[];
  places.forEach(pair=>{
