@@ -25,6 +25,6 @@ section.book-chapter > figure.mythos-figure{margin:20px auto 26px}
 /* Schémas philosophiques originaux : largeur lisible, zoom accessible, impression. */
 figure.mythos-figure.mythos-philo-diagram{max-width:1100px}
 figure.mythos-figure.mythos-philo-diagram>a{display:block}
-figure.mythos-figure.mythos-philo-diagram img{max-height:none;object-fit:contain;aspect-ratio:1600/725}
+figure.mythos-figure.mythos-philo-diagram img{max-height:none;object-fit:contain;aspect-ratio:auto}
 figure.mythos-figure.mythos-philo-diagram>a:focus-visible{outline:3px solid #ead099;outline-offset:-4px}
 @media(max-width:650px){figure.mythos-figure.mythos-philo-diagram figcaption{padding:15px}figure.mythos-figure.mythos-philo-diagram>a{min-height:120px}}
