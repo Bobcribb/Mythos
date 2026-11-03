@@ -119,8 +119,59 @@ dest.write_bytes(raw)
 existing.append({"slug":slug,"title":title,"region":region,"period":period,"view_kind":view_kind,"view_label":view_label,"src":"/Mythos/assets/reconstitutions-3d/"+dest.name,"certainty":"Reconstitution interprétative : élévations et couleurs à vérifier","created_at":datetime.now(timezone.utc).date().isoformat(),"source_url":references.get(base_slug),"certainty_level":"Moyen pour la topographie, faible pour les élévations restituées"})
 manifest_path.write_text(json.dumps(existing,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 from html import escape
-cards="".join('<article><img loading="lazy" src="'+escape(x["src"])+'" alt="'+escape(x["title"])+'"><h2>'+escape(x["title"])+'</h2><p>'+escape(x.get("view_label","Vue architecturale"))+' · '+escape(x["region"])+' · '+escape(x["period"])+'</p>'+('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(x["source_url"])+'">Source institutionnelle</a></p>' if x.get("source_url") else '')+'</article>' for x in existing)
-page='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MYTHOS — Reconstitutions photoréalistes</title><style>body{background:#0c0e10;color:#eee0c1;margin:0;font-family:Georgia,serif}header{text-align:center;padding:3rem 1rem;border-bottom:1px solid #aa8744}h1,h2{color:#dfba71}main{max-width:1250px;margin:auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem}article{padding:1rem;border:1px solid #9b7b40;background:#17191b}img{width:100%;height:auto}a{color:#dfba71}</style></head><body><header><h1>MYTHOS — Reconstitutions 3D photoréalistes</h1><a href="/Mythos/reconstitutions-3d.html">Consulter les notices scientifiques</a></header><main>'+cards+'</main></body></html>'
+# Scientific captions are kept in HTML below the photographs, never embedded into the image.
+# These summaries refer to the monuments; they do not certify the generated visual details.
+site_comments={
+"delphes-apollon":"Le temple dorique d’Apollon appartient au sanctuaire panhellénique de Delphes. Le plan et la reconstruction au IVe siècle sont documentés ; les statues, couleurs et édifices voisins ne sont pas restitués avec certitude.",
+"nemee-zeus":"Le temple de Zeus, reconstruit au IVe siècle av. J.-C., présente une colonnade dorique extérieure et des ordres intérieurs distincts. La topographie et les décors de la scène restent interprétatifs.",
+"corinthe-apollon":"Le temple archaïque d’Apollon, daté du VIe siècle av. J.-C., conserve des colonnes monolithes doriques. L’apparence complète du toit et des couleurs est proposée à titre illustratif.",
+"messene-asklepieion":"L’Asclépiéion de Messène associait culte, vie civique et monuments publics. Son plan hellénistique est documenté, mais les couvertures et les aménagements restitués demeurent hypothétiques.",
+"sounion-poseidon":"Le temple dorique de Poséidon domine le cap Sounion. Le plan est connu ; la polychromie, l’élévation intégrale et les détails paysagers de la scène sont interprétatifs.",
+"brauron-artemis":"Le sanctuaire d’Artémis à Brauron comprenait un temple et des portiques dont la chronologie et les états construits demandent prudence. Les éléments non attestés sont présentés comme hypothèses.",
+"dodone-theatre":"Dodone associait le sanctuaire oraculaire de Zeus à un ensemble monumental développé en plusieurs phases. Le théâtre et les reliefs sont documentés, les détails de restitution demeurent hypothétiques.",
+"bassae-apollon":"Le temple d’Apollon Épikourios présente un péristyle dorique et une organisation intérieure exceptionnelle. La toiture, la lumière intérieure et les couleurs reconstruites restent incertaines.",
+"mycenes-citadelle":"La citadelle mycénienne est célèbre pour ses murailles cyclopéennes et la Porte des Lionnes. Les parties hautes du palais et les décors proposés n’ont pas la précision d’un relevé archéologique.",
+"olympie-zeus":"Le sanctuaire d’Olympie comprenait le grand temple dorique de Zeus. L’architecture fondamentale est documentée ; l’ensemble des peintures et équipements restitués n’est pas assuré.",
+"epidaure-asclepios":"Le sanctuaire d’Asclépios à Épidaure se développa autour de monuments de guérison, de culte et de représentation. Leur topographie générale est connue mais plusieurs élévations sont restituées.",
+"epidaure-theatre":"Le théâtre d’Épidaure possède des vestiges exceptionnellement lisibles. Les gradins et l’implantation sont documentés, contrairement aux couleurs et détails de l’environnement ancien.",
+"tirynthe-citadelle":"À Tirynthe, les remparts cyclopéens et certains dispositifs du palais mycénien sont attestés. Les toitures, étages et peintures proposés constituent des hypothèses.",
+"athenes-acropole":"L’Acropole classique résulte de plusieurs programmes architecturaux du Ve siècle av. J.-C. Les bâtiments et la topographie de l’Attique ne sont pas une restitution métrique dans cette image.",
+}
+def render_card(x):
+    site_slug=x["slug"].removesuffix("-panorama")
+    commentary=escape(site_comments.get(site_slug,
+        "Reconstitution visuelle interprétative fondée sur la documentation générale du site. La topographie de détail, les décors, les teintes et les personnages ne sont pas garantis."))
+    source=x.get("source_url")
+    source_html=('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(source,quote=True)+'">Source institutionnelle ou scientifique ↗</a></p>' if source else '<p>Référence institutionnelle spécifique à compléter avant validation scientifique.</p>')
+    label=escape(x.get("view_label","Vue architecturale"))
+    return ('<article class="mythos-image"><figure><img loading="lazy" decoding="async" src="'+escape(x["src"],quote=True)+'" alt="'+escape(x["title"],quote=True)+'">'
+       '<figcaption><strong>'+escape(x["title"])+'</strong><span>'+label+' · '+escape(x["region"])+' · '+escape(x["period"])+'</span></figcaption></figure>'
+       '<details><summary>Notice scientifique, sources et certitude</summary>'
+       '<p>'+commentary+'</p><p><strong>Certitude :</strong> '+escape(x.get("certainty_level","Topographie à contrôler ; détails de restitution hypothétiques"))+'</p>'
+       '<p><strong>Limites :</strong> restitution interprétative non métrique ; aucun détail généré n’est validé par la seule citation de la source.</p>'
+       +source_html+'</details></article>')
+cards="\n".join(render_card(x) for x in existing)
+page=('''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MYTHOS — Reconstitutions photoréalistes</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}
+body{background:#0c0e10;color:#eee0c1;margin:0;font:17px/1.6 Georgia,serif}
+header{text-align:center;padding:3rem 1rem;border-bottom:1px solid #9b7b40}
+header p{max-width:850px;margin:1rem auto;color:#cdbd9d}
+h1{font-size:clamp(2rem,4vw,3.4rem);line-height:1.15;margin:.2rem;color:#dfba71}
+a{color:#dfba71}main{max-width:1390px;margin:auto;padding:2rem 1rem 4rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,510px),1fr));gap:1.6rem}
+article{border:1px solid #9b7b40;background:#17191b;overflow:hidden}
+figure{margin:0}img{display:block;width:100%;height:auto}
+figcaption{padding:1rem 1.2rem;display:grid;gap:.3rem}
+figcaption strong{color:#e9c581;font-size:1.35rem;font-weight:normal}
+figcaption span{font-size:.95rem;color:#cfc2a5}
+details{padding:.9rem 1.2rem;border-top:1px solid #61512e}
+summary{color:#e7c689;cursor:pointer}details p{margin:.7rem 0}
+</style></head><body>
+<header><h1>MYTHOS — Reconstitutions 3D photoréalistes</h1>
+<p>Vues monumentales et plans larges des sites antiques grecs. Les légendes, notices et sources sont séparées des images. Reconstitutions numériques interprétatives, sans prétention de précision métrique.</p>
+<a href="/Mythos/reconstitutions-3d.html">Consulter les notices archéologiques détaillées →</a></header><main>'''
++cards+'</main></body></html>')
 (root/"reconstitutions-photorealistes.html").write_text(page,encoding="utf-8")
 # Link from the existing documented atlas only after an image is generated.
 atlas = root / "reconstitutions-3d.html"
