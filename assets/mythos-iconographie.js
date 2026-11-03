@@ -49,7 +49,7 @@ pretendants:{
  work:"Illustration documentaire publiée d’après un skyphos attique à figures rouges, vers 440 av. J.-C. Reproduction en noir et blanc.",
  reading:"Odyssée XXII : l’autorité retrouvée a pour contrepartie une violence dont l’évaluation éthique demeure ouverte.",
  status:"Document de reproduction moderne d’un objet antique · aucune génération IA.",
- credit:"Source : planche d’histoire de la céramique conservée sur Wikimedia Commons ; notice et statut à vérifier avant diffusion imprimée."
+ credit:"Source : planche issue de Furtwängler (1924), numérisée sur Wikimedia Commons ; licence CC0 (notice vérifiée)."
 },
 rhea:{
  file:"Rhea handing a swaddled stone to Cronus, Attic terracotta pelike, c. 460–450 BC, Met 06.1021.144.jpg",
