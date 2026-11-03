@@ -107,3 +107,15 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Liens :** `origines-du-sacre.html`, `sommaire-general.html`, `corpus/sommaire-general.md` renvoient aux deux éditions HTML. Chaque nouvelle page contient huit ancres de chapitres, des liens vers sa source Markdown et le retour à la collection ; les tomes se relient au tome XXX déjà présent. Ne pas confondre ces cotes avec les tomes homonymes de MYTHOS-OS-LIB.
 
 **Limites :** l'intégrité documentaire et les liens sont vérifiables dans GitHub, mais l'audit scientifique de chaque citation, la fidélité du rendu visuel sur appareil et le déploiement du domaine public ne sont pas certifiés par cette intervention. Aucun texte précédent ni aucune automatisation n'ont été modifiés.
+
+
+## 3 novembre 2026 — ODS-CONV-XXVII, feu sacré
+
+**Source retrouvée :** Bibliothèque, `MYTHOS_Origines_du_sacre_Tome_XXVII_Ch355-362_2026-11-01.md`, 338 lignes / 51 508 caractères textuels. Manuscrit intégral lu, contrôle des huit chapitres 355–362, de la bibliographie, des réserves scientifiques et de la fin du document.
+
+- [Archive Markdown sans réécriture](origines-du-sacre/conv-tome-XXVII-chapitres-355-362.md).
+- [Page de lecture HTML](origines-du-sacre/conv-tome-XXVII-chapitres-355-362.html), avec huit ancres de chapitre, sommaire, styles responsives et lien vers le tome XXVIII.
+- Liens ajoutés dans les pages `origines-du-sacre.html`, `sommaire-general.html` et `corpus/sommaire-general.md`.
+- Cote **ODS-CONV-XXVII**. Ne pas confondre le tome XXVII de cette série, consacré au feu, avec celui de **MYTHOS-OS-LIB**, dont le contenu et la numérotation sont différents.
+- Les tomes XXV et XXVI de la série conversationnelle ont été localisés dans la Bibliothèque mais ne sont pas intégrés par cette entrée de registre. Ne pas leur attribuer de statut de publication avant contrôle et transfert.
+- Contrôle scientifique détaillé des références et déploiement public à vérifier séparément ; aucun fichier d'archive précédent ni aucune automatisation n'a été modifié.
