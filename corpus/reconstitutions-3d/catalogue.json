@@ -1,0 +1,73 @@
+{
+  "collection": "MYTHOS — Reconstitutions 3D",
+  "version": "2026-11-03",
+  "scope": "Grèce antique",
+  "image_policy": "Illustrations numériques schématiques 2.5D ; ne pas présenter comme photogrammétrie, maquette 3D interactive ou restitution archéologique certaine.",
+  "entries": [
+    {
+      "id": "DEL-001",
+      "slug": "delphes-temple-apollon-330",
+      "region": "Grèce centrale",
+      "site": "Delphes",
+      "monument": "Temple d'Apollon",
+      "period": "IVe siècle av. J.-C. (édifice terminé vers 334–333 av. J.-C. ; décor achevé vers 327)",
+      "image": "/assets/reconstitutions/delphes-apollon-330-av-jc.svg",
+      "image_type": "Illustration vectorielle axonométrique, perspective simulée",
+      "attested": [
+        "Sanctuaire d'Apollon sur la pente du Parnasse",
+        "Temple dorique périptère, six colonnes en façade",
+        "Temple reconstruit après destruction du bâtiment archaïque en 373 av. J.-C."
+      ],
+      "hypothetical": [
+        "Textures, coloris et silhouette simplifiée de la toiture",
+        "Position des arbres et bâtiments secondaires de la scène",
+        "Proportions schématiques et perspective non métrique"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "représentation_visuelle": "faible à moyenne"
+      },
+      "sources": [
+        "https://delphi.culture.gr/le-temple-dapollo/",
+        "https://whc.unesco.org/en/list/393/"
+      ],
+      "historical_crosslinks": [
+        "/mythologie-grecque.html",
+        "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "DEL-002",
+      "slug": "delphes-tholos-athena-pronaia",
+      "region": "Grèce centrale",
+      "site": "Delphes",
+      "monument": "Tholos d'Athéna Pronaia",
+      "period": "Vers 380–370 av. J.-C.",
+      "image": "/assets/reconstitutions/delphes-tholos-370-av-jc.svg",
+      "image_type": "Illustration vectorielle axonométrique, perspective simulée",
+      "attested": [
+        "Plan circulaire au sanctuaire d'Athéna Pronaia",
+        "Vingt colonnes doriques extérieures",
+        "Fonction exacte du monument inconnue"
+      ],
+      "hypothetical": [
+        "Toiture conique illustrée à titre d'hypothèse",
+        "Matériaux et couleurs simplifiés",
+        "Cadre paysager non relevé topographique"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "toiture": "faible",
+        "fonction": "indéterminée"
+      },
+      "sources": [
+        "https://delphi.culture.gr/the-tholos/",
+        "https://delphi.culture.gr/the-tholos-3d/"
+      ],
+      "historical_crosslinks": [
+        "/mythologie-grecque.html",
+        "/grande-encyclopedie.html"
+      ]
+    }
+  ]
+}
