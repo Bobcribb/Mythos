@@ -32,7 +32,10 @@ jobs:
           if p.exists():
               data=json.loads(p.read_text(encoding="utf-8"))
               for item in data:
-                  f=pathlib.Path(item["src"].lstrip("/"))
+                  src = item["src"]
+                  if src.startswith("/Mythos/"):
+                      src = src[len("/Mythos/"):]
+                  f=pathlib.Path(src.lstrip("/"))
                   if not f.is_file() or f.stat().st_size < 10000:
                       raise SystemExit(f"Image manquante ou tronquée : {f}")
               print(f"{len(data)} images vérifiées dans l’artefact")
