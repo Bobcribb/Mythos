@@ -363,6 +363,83 @@
         "/reconstitutions-3d.html#aeg-002",
         "/mythologie-grecque.html"
       ]
+    },
+    {
+      "id": "DOD-001",
+      "slug": "dodone-theatre-pyrrhus-debut-iiie",
+      "region": "Épire",
+      "subregion": "Dodone, bassin de Ioannina",
+      "site": "Dodone",
+      "monument": "Grand théâtre",
+      "period": "Début du IIIe siècle av. J.-C., règne de Pyrrhus d'Épire (297–272 av. J.-C.) ; état initial schématique",
+      "image": "/assets/reconstitutions/dodone-theatre-pyrrhus-iiie-siecle.svg",
+      "image_type": "Illustration numérique vectorielle originale 2,5D non métrique ; ni modèle 3D interactif ni photographie",
+      "attested": [
+        "Grand théâtre à trois niveaux de gradins construit au début du IIIe siècle av. J.-C.",
+        "Aménagement du koilon sur la pente et des parties sur des remblais soutenus par de grands murs",
+        "Escaliers rayonnants, orchestra et bâtiment de scène, plusieurs phases de construction",
+        "Capacité approximative 15 000–17 000 places selon le ministère grec de la Culture"
+      ],
+      "hypothetical": [
+        "Nombre et découpage des rangées dans le dessin ; dessin non métrique",
+        "Volume et façade de scène schématiques, sans attribution à une phase de restauration précise",
+        "Couleurs, personnages, relief lointain, végétation et teintes"
+      ],
+      "certainty": {
+        "plan_ensemble": "élevée",
+        "chronologie_de_construction": "élevée",
+        "scene_en_elevation": "faible_à_moyenne",
+        "couleurs_et_paysage": "faible"
+      },
+      "sources": [
+        "https://culturalegnatia.culture.gov.gr/en/route-stops/dodona/",
+        "https://allofgreeceone.culture.gov.gr/en/venues/ancient-theatre-of-dodoni-ioannina/",
+        "https://diazoma.gr/en/theaters/ancient-theater-of-dodona/"
+      ],
+      "historical_crosslinks": [
+        "/sites/dodone.html#theatre",
+        "/reconstitutions-3d.html#dod-001",
+        "/grande-encyclopedie.html"
+      ],
+      "publication_note": "SVG original publié dans le dépôt MYTHOS ; planche photoréaliste créée séparément dans la conversation, non mise en ligne."
+    },
+    {
+      "id": "DOD-002",
+      "slug": "dodone-hiera-oikia-chene-oraculaire",
+      "region": "Épire",
+      "subregion": "Dodone, bassin de Ioannina",
+      "site": "Dodone",
+      "monument": "Hiéra Oikia et chêne de Zeus Naios",
+      "period": "Petit temple du IVe siècle av. J.-C. ; enceinte et portiques ioniques attribués au programme de Pyrrhus au début du IIIe siècle av. J.-C.",
+      "image": "/assets/reconstitutions/dodone-hiera-oikia-chene-pyrrhus.svg",
+      "image_type": "Illustration numérique vectorielle originale en perspective simulée 2,5D, sans menu de navigation",
+      "attested": [
+        "Chêne oraculaire au cœur de la zone cultuelle de Zeus Naios",
+        "Premier petit temple en pierre au début du IVe siècle av. J.-C.",
+        "Agrandissement de l'enceinte et portiques ioniques sur les côtés nord, ouest et sud sous Pyrrhus",
+        "Côté oriental laissé ouvert près de l'arbre ; reconstructions postérieures à 219 av. J.-C. distinctes"
+      ],
+      "hypothetical": [
+        "Apparence et ampleur du chêne ancien",
+        "Élévations des portiques, couverture et style de polychromie",
+        "Orientation graphique et dimensions des édifices, mobilier, végétation et perspective non métriques"
+      ],
+      "certainty": {
+        "implantation_du_sanctuaire": "élevée",
+        "phases_et_plan_general": "élevée",
+        "elevations": "faible_à_moyenne",
+        "apparence_du_chene": "faible"
+      },
+      "sources": [
+        "https://culturalegnatia.culture.gov.gr/en/route-stops/dodona/",
+        "https://perseus-aa.github.io/items/aa_3892.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/dodone.html#zeus",
+        "/reconstitutions-3d.html#dod-002",
+        "/mythologie-grecque.html"
+      ],
+      "publication_note": "SVG schématique original publié dans le dépôt ; ne pas confondre avec une restitution archéologique métrique."
     }
   ]
 }
