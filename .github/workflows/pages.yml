@@ -1,0 +1,46 @@
+name: Publier MYTHOS sur GitHub Pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Vérifier les pages fondamentales
+        run: |
+          test -s index.html
+          test -s reconstitutions-3d.html
+          test -s philosophie.html
+      - name: Contrôler les images si la galerie existe
+        run: |
+          python3 - <<'PY'
+          import json, pathlib
+          p=pathlib.Path("assets/reconstitutions-3d/photorealistes.json")
+          if p.exists():
+              data=json.loads(p.read_text(encoding="utf-8"))
+              for item in data:
+                  f=pathlib.Path(item["src"].lstrip("/"))
+                  if not f.is_file() or f.stat().st_size < 10000:
+                      raise SystemExit(f"Image manquante ou tronquée : {f}")
+              print(f"{len(data)} images vérifiées dans l’artefact")
+          else:
+              print("Galerie non encore créée : articles conservés")
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - id: deployment
+        uses: actions/deploy-pages@v4
