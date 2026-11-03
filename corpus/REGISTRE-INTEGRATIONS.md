@@ -119,3 +119,19 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 - Cote **ODS-CONV-XXVII**. Ne pas confondre le tome XXVII de cette série, consacré au feu, avec celui de **MYTHOS-OS-LIB**, dont le contenu et la numérotation sont différents.
 - Les tomes XXV et XXVI de la série conversationnelle ont été localisés dans la Bibliothèque mais ne sont pas intégrés par cette entrée de registre. Ne pas leur attribuer de statut de publication avant contrôle et transfert.
 - Contrôle scientifique détaillé des références et déploiement public à vérifier séparément ; aucun fichier d'archive précédent ni aucune automatisation n'a été modifié.
+
+
+## 3 novembre 2026 — Tomes XXXII et XXXIII, édition MYTHOS-OS-CONV
+
+| Cote | Chapitres / contenu | Source originale (Bibliothèque, 1er novembre 2026) | Archive fidèle | Page HTML |
+| --- | --- | --- | --- | --- |
+| **ODS-CONV-XXXII** | 395–402 — Corps humains, possession, masques et incarnations rituelles | `MYTHOS_Origines_du_sacre_Tome_XXXII_Ch395-402_2026-11-01.md` | [Markdown](origines-du-sacre/conv-tome-XXXII-chapitres-395-402.md) | [Lecture avec sommaire](origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html) |
+| **ODS-CONV-XXXIII** | 403–410 — Voix du sacré : hymnes, chants, musique et silence | `MYTHOS_Origines_du_sacre_Tome_XXXIII_Ch403-410_2026-11-01.md` | [Markdown](origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.md) | [Lecture avec sommaire](origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html) |
+
+**Contrôle d'intégralité :** tome XXXII, 392 lignes et **60 944 caractères textuels** ; tome XXXIII, 366 lignes et **54 867 caractères textuels**. Chaque fichier de Bibliothèque a été lu du début à la dernière ligne. Les copies Markdown récupérées depuis GitHub sont **strictement identiques caractère par caractère** aux manuscrits accessibles : aucun chapitre, source, bibliographie ou registre final tronqué, renommé ou résumé dans ces archives. Huit en-têtes de chapitre contrôlés par tome ; les seize ancres de chapitre et les seize liens du sommaire sont présents dans les deux lecteurs HTML. Les pages proposent un lien vers la source vérifiée et une mise en page responsive noir et or ; leur transcription en HTML préserve les marques Markdown pour assurer la traçabilité. Ces documents sont de statut **manuscrit universitaire de travail**, non des éditions scientifiques revues ligne à ligne.
+
+**Navigation et graphisme :** lecteur responsive commun `assets/mythos-volume-lecture.css`, avec bandeau vectoriel local « statue à gauche, temple à droite » (déjà présent : `assets/mythos-hero.svg`), sommaires internes, pages sources, tomes précédent/suivant ; ajout de deux **cartes illustrées responsives** dans `origines-du-sacre.html`, à partir des motifs graphiques locaux `assets/mythos-archaeology-tiles.svg` explicitement présentés comme décoratifs. Liens ajoutés dans `sommaire-general.html`, `corpus/sommaire-general.md` et sur l'accueil `index.html`. Liens de progression intégrés aux lecteurs XXX et XXXI sans modifier leurs transcriptions d'origine. La collection de référence **MYTHOS-OS-LIB** reste distincte.
+
+**Correction de catalogue :** remplacement de trois séquences littérales `\\n` erronées par de véritables retours à la ligne dans le sommaire Markdown ; correction d'un chemin relatif erroné vers le recueil I–XXVII.
+
+**Limites :** la disponibilité sur GitHub et la reprise documentaire sont vérifiées. Aucune vérification bibliographique exhaustive, aucun test visuel dans tous les navigateurs et aucune garantie de déploiement de bobmythos.fr ne sont revendiqués. Aucune automatisation MYTHOS n'a été modifiée.
