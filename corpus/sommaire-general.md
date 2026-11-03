@@ -38,6 +38,8 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 - **TH-01 — Tragédies : pièces, intrigues, résumés et reconstitutions**.
 - **TH-02 — Comédies : pièces, intrigues, résumés et reconstitutions**.
 - **TH-03 — Analyses philosophiques liées aux pièces**, avec renvois réciproques, sans mélange avec les résumés.
+- **TH-03-HOL — Aristophane, *Holkades*, étude critique (16 sections)** : [lecture complète](theatre-grec/comedies/holkades-etude.html), avec sources et bibliographie.
+- **TH-02-HOL — *Holkades*, trois scènes contemporaines** : [créations distinctes](theatre-grec/comedies/holkades-scenes-modernes.html) ; [manuscrit historique intégral](theatre-grec/comedies/holkades-source.md).
 - Les textes perdus, fragments et reconstitutions doivent être signalés distinctement.
 
 ## PH — Philosophie
