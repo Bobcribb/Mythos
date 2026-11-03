@@ -2,7 +2,7 @@
   "collection": "MYTHOS — Reconstitutions 3D",
   "version": "2026-11-03",
   "scope": "Grèce antique",
-  "image_policy": "Illustrations numériques schématiques 2.5D ; ne pas présenter comme photogrammétrie, maquette 3D interactive ou restitution archéologique certaine.",
+  "image_policy": "Illustrations vectorielles schématiques 2,5D, sans menu de navigation à l'intérieur des images ; ne pas présenter comme photogrammétrie, maquette 3D interactive ou restitution archéologique certaine. Distinguer à chaque notice les données attestées des hypothèses.",
   "entries": [
     {
       "id": "DEL-001",
@@ -68,6 +68,79 @@
       "historical_crosslinks": [
         "/sites/delphes.html",
         "/mythologie-grecque.html",
+        "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "NEM-001",
+      "slug": "nemee-temple-zeus-330",
+      "region": "Péloponnèse",
+      "subregion": "Corinthie",
+      "site": "Némée",
+      "monument": "Temple de Zeus",
+      "period": "Vers 330 av. J.-C.",
+      "image": "/assets/reconstitutions/nemee-zeus-330-av-jc.svg",
+      "image_type": "Illustration originale vectorielle en perspective simulée 2,5D, sans menu",
+      "attested": [
+        "Péristyle dorique de six colonnes sur les façades et douze sur les flancs (32 au total)",
+        "Calcaire local revêtu d'un enduit fin",
+        "Colonnes corinthiennes à l'intérieur au niveau bas, ioniennes au niveau supérieur",
+        "Présence d'un adyton et d'une crypte à fonction discutée"
+      ],
+      "hypothetical": [
+        "Perspective non métrique et proportions schématiques",
+        "Couleurs, toiture, végétation et paysage exacts",
+        "Aucun grand programme sculptural de façade n'est ajouté à l'illustration"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "colonnes": "élevée",
+        "couverture": "moyenne",
+        "coloris": "faible"
+      },
+      "sources": [
+        "https://nemeacenter.berkeley.edu/ancient-nemea/temple-zeus",
+        "https://nemeangames.org/en/the-temple-and-sanctuary-of-nemean-zeus/"
+      ],
+      "historical_crosslinks": [
+        "/sites/nemee.html#temple",
+        "/reconstitutions-3d.html#nem-001",
+        "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "NEM-002",
+      "slug": "nemee-stade-hellenistique",
+      "region": "Péloponnèse",
+      "subregion": "Corinthie",
+      "site": "Némée",
+      "monument": "Stade hellénistique",
+      "period": "Vers 330–320 av. J.-C.",
+      "image": "/assets/reconstitutions/nemee-stade-320-av-jc.svg",
+      "image_type": "Illustration originale vectorielle en perspective simulée 2,5D, sans menu",
+      "attested": [
+        "Piste en terre dans une dépression naturelle",
+        "Longueur de la course : 600 pieds anciens, environ 178 mètres",
+        "Ligne de départ conservée",
+        "Tunnel d'entrée et apodytérion attestés"
+      ],
+      "hypothetical": [
+        "Position des détails dans l'image et relief non métriques",
+        "Végétation, couleurs, proportions perspectives illustratives"
+      ],
+      "certainty": {
+        "piste": "élevée",
+        "tunnel": "élevée",
+        "perspective": "faible",
+        "vegetation": "faible"
+      },
+      "sources": [
+        "https://nemeacenter.berkeley.edu/publications/excavations-nemea",
+        "https://nemeacenter.berkeley.edu/ancient-nemea-0"
+      ],
+      "historical_crosslinks": [
+        "/sites/nemee.html#stade",
+        "/reconstitutions-3d.html#nem-002",
         "/grande-encyclopedie.html"
       ]
     }
