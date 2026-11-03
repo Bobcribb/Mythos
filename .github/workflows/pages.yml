@@ -27,6 +27,20 @@ jobs:
           test -s mythologie-grecque.html
           test -s corpus/mythologie-grecque/archives/livre-dieux.html
           test -s corpus/mythologie-grecque/archives/livre-thebes.html
+          test -s assets/mythos-volume-lecture.css
+          test -s corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html
+          test -s corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.md
+          test -s corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html
+          test -s corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.md
+          test "$(wc -c < corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.md)" -gt 50000
+          test "$(wc -c < corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.md)" -gt 50000
+          grep -q 'id="chapitre-395"' corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html
+          grep -q 'id="chapitre-402"' corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html
+          grep -q 'id="chapitre-403"' corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html
+          grep -q 'id="chapitre-410"' corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html
+          grep -q 'id="bibliographie"' corpus/origines-du-sacre/conv-tome-XXXII-chapitres-395-402.html
+          grep -q 'id="bibliographie"' corpus/origines-du-sacre/conv-tome-XXXIII-chapitres-403-410.html
+          grep -q 'conv-tome-XXXIII-chapitres-403-410.html' origines-du-sacre.html
           echo "Pages MYTHOS présentes dans l'artefact"
       - name: Préparer les fichiers
         uses: actions/upload-pages-artifact@v3
