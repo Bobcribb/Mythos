@@ -63,3 +63,20 @@ Comparaison indépendante locale avec MarkdownIt et BeautifulSoup : **19 section
 Les essais locaux incorporent les CSS et le SVG exacts du dépôt ; les pages de destination hors lecteurs sont des fixtures locales et ne prouvent pas le déploiement. GitHub Actions vérifie séparément les vrais fichiers de destination et les ancres, puis publie l'artefact. Le rapport `comedies/polyidos-controle.json` est généré à cette étape. La comparaison de texte ne constitue pas une collation scientifique exhaustive des fragments. La disponibilité du domaine public doit être confirmée indépendamment du succès de Pages.
 
 Toutes les archives précédentes restent conservées. Aucun autre dépôt ni aucune programmation MYTHOS n'a été modifié.
+
+
+## 3 novembre 2026 — Kôkalos, volume XXVII, dossier TH-COM-KOK
+
+### Source et transfert
+Source historique : `Bobcribb/Bobcribb.github.io/chapitres/comedies/volume-027-aristophane-kokalos.md`, blob Git `346275f9a6ea5d889f02060123fe8da981445d5a`. Avant transfert, aucun `kokalos-source.md` ni lecteur `kokalos-*.html` n'existait dans l'arbre du dépôt `Bobcribb/Mythos` contrôlé.
+
+Archive conservée textuellement : [kokalos-source.md](comedies/kokalos-source.md), **17 835 caractères** (176 lignes par découpage textuel), avec front matter et 22 sections. Ce document est une **étude moderne d'une comédie perdue**, non un texte authentique d'Aristophane.
+
+### Classement
+- **TH-03-KOK** : [étude historique, philologique et philosophique](comedies/kokalos-etude.html), préambule et sections **1 à 16 puis 20 à 22** (19 sections). Bibliographie et protocole de vérification conservés, avec les réserves de source.
+- **TH-02-KOK** : [trois scènes modernes](comedies/kokalos-scenes-modernes.html), sections **17 à 19** du même manuscrit, explicitement signalées comme créations contemporaines.
+- Les deux lectures ont des liens réciproques et un lien vers le Markdown source. Chacun des 22 identifiants de section a été relu dans GitHub : **22/22 présents dans un seul des deux lecteurs**.
+- Entrées ajoutées à `theatre-grec.html`, `philosophie.html` (analyse seulement) et `sommaire-general.html`. Les pages utilisent le thème sombre et doré, le fichier CSS théâtral existant, son motif local de statue et temple, des sommaires cliquables et une mise en page mobile.
+
+### Limites
+La fidélité de l'archive et la répartition de ses sections ont été contrôlées par relecture GitHub. Les paragraphes dans les lecteurs sont affichés avec leur syntaxe Markdown d'origine pour éviter toute reformulation ; ce n'est pas une nouvelle édition philologique. Ni la collation exhaustive des sources anciennes ni le rendu visuel et le déploiement effectif sur le domaine public n'ont été certifiés dans cette intervention. Aucun ancien manuscrit n'a été écrasé, aucun autre dépôt ni aucune automatisation MYTHOS n'a été modifié.
