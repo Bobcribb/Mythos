@@ -121,3 +121,23 @@ Le script [check-holkades.py](../../scripts/check-holkades.py), déclenché avan
 ### Limites scientifiques et techniques
 
 Le contrôle porte sur la fidélité de l'intégration et le fonctionnement des liens, **non** sur la collation philologique exhaustive de *Poetae Comici Graeci* III.2. Aucune réplique nouvelle n'a été ajoutée. Le rendu sur le domaine public dépend de la réussite du déploiement GitHub Pages et doit être confirmé indépendamment. Le dépôt historique, les archives antérieures et les autres automatisations MYTHOS restent inchangés.
+
+## 3 novembre 2026 — Lemniai (Les Lemniennes), volume historique XXX
+
+### Source contrôlée et absence initiale dans le dépôt cible
+
+Le manuscrit existait dans l'archive GitHub historique `Bobcribb/Bobcribb.github.io` : `chapitres/comedies/volume-030-aristophane-lemniai.md`, empreinte blob `92ea495425566b16125151268f07729478b9d0ec`. Il n'était pas présent dans l'arbre `Bobcribb/Mythos` lors de l'inventaire précédent l'opération. **Il s'agit du transfert d'un texte antérieur, non d'une nouvelle rédaction.**
+
+- Copie exacte : [lemniai-source.md](comedies/lemniai-source.md). **13 461 caractères**, **162 lignes**, **22 sections** numérotées 1–22 ; source et copie Git possèdent le **même SHA de blob**.
+- **TH-03-LEM — Étude documentaire, philologique et philosophique** : [lecture intégrale](comedies/lemniai-etude.html), sections **1–16 et 20–22** (19 sections), préambule, bilan des degrés de certitude et bibliographie.
+- **TH-02-LEM — Créations dramatiques contemporaines** : [trois scènes distinctes](comedies/lemniai-scenes-modernes.html), sections **17–19 [C]**. Aucune de ces scènes n'est présentée comme fragment de comédie antique.
+- L'interprétation des marques Markdown (liens, emphases, listes) a été contrôlée sur les **22 blocs de prose** après publication : **22/22 identités du texte visible** par normalisation des espaces et suppression des balises de présentation. Ni suppression de section ni remplacement par un résumé.
+- La source conserve tous ses liens historiques ; les lecteurs adaptent les liens de navigation vers les rubriques MYTHOS actuelles.
+
+### Mise en ligne et navigation
+
+Les pages sont des documents HTML statiques **versionnés directement** dans `main`, à la différence des lecteurs Polyidos et Daidalos générés pendant le déploiement. Les cartes illustrées de la rubrique Théâtre et le renvoi vers l'étude dans Philosophie ont été ajoutés ; le sommaire général HTML et Markdown et l'accueil pointent vers la lecture. Le volume précédent *Holkades* renvoie désormais localement à la nouvelle étude ; chaque parcours des *Lemniennes* possède un sommaire à ancres, un lien vers son complément, vers le manuscrit source et vers le sommaire général.
+
+Le bandeau emploie le SVG existant `assets/mythos-hero.svg` (composition éditoriale statue grecque à gauche et temple stylisé à droite), dans une présentation noir et or. Les deux cartes utilisent le même motif, une à gauche et l'autre à droite. Les lecteurs contiennent une grille de navigation adaptée aux écrans étroits, un lien d'évitement et des repères de focus ; ces visuels sont contemporains et **ne représentent pas une reconstitution archéologique**.
+
+Contrôle avant déploiement : `scripts/check-lemniai.py`, branché dans `.github/workflows/pages.yml`, vérifie l'empreinte du manuscrit, la partition des sections, l'identité du texte lisible, la bibliographie, les liens et les ancres. **À vérifier après exécution du workflow** : succès de l'action et état effectif de la page publique. Les sources scientifiques sont citées dans le chapitre mais leur exactitude philologique doit faire l'objet d'une vérification distincte, non couverte par l'audit de transfert. Aucune archive n'a été supprimée et les autres automatisations MYTHOS ne sont pas modifiées.
