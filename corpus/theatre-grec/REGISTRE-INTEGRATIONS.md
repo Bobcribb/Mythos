@@ -1,5 +1,14 @@
 # Théâtre grec — Registre des intégrations contrôlées
 
+## 3 novembre 2026 — Ploutos I, comédies grecques XXXII (TH-COM-PL1)
+
+Source complète : [manuscrit du dépôt historique](https://github.com/Bobcribb/Bobcribb.github.io/blob/f740d6a4ef3b02d30f9e41cafbc5a9b640c8f5dc/chapitres/comedies/volume-032-aristophane-ploutos-protos.md), commit `f740d6a4ef3b02d30f9e41cafbc5a9b640c8f5dc`, blob Git `83d0ebf6f67e6092baf27d120b7440fea65d3d8a`. Copie identique dans [ploutos-protos-source.md](comedies/ploutos-protos-source.md) : 12319 octets, 11931 caractères. Aucun dossier Ploutos I publié auparavant dans `Bobcribb/Mythos` au commit `40cc6bad5b6f` : la référence depuis Gēras était un lien vers l'archive historique.
+
+**TH-03-PL1** : [étude critique](comedies/ploutos-protos-etude.html), préambule et 19 sections (1–16 et 20–22), bibliographie complète. **TH-02-PL1** : [scènes modernes](comedies/ploutos-protos-scenes-modernes.html), trois créations [C] (17–19), non attribuées à Aristophane.
+
+Contrôle éditorial : copie source exacte ; 22/22 sections comparées en texte visible avec le Markdown d'origine, répartition sans omettre ni répéter de section. Accueil, Théâtre, Philosophie, sommaire général et liens réciproques depuis Gēras mis à jour. Mise en page noir/or, bannière statue/temple, cartes illustrées, repères 408/388 et styles responsives. Le texte original et toutes les archives restent conservés. La comparaison de texte ne constitue pas une collation philologique ; publication publique à confirmer dans Actions.
+
+
 ## 3 novembre 2026 — Daidalos, dossier TH-COM-DAI
 
 ### Source et statut antérieur
