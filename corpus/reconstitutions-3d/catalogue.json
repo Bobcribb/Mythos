@@ -2,7 +2,7 @@
   "collection": "MYTHOS — Reconstitutions 3D",
   "version": "2026-11-03",
   "scope": "Grèce antique",
-  "image_policy": "Illustrations originales en perspective simulée 2,5D, sans menu de navigation dans les images. Distinguer strictement les vestiges attestés, les phases chronologiques et les hypothèses de restitution. Les illustrations ne sont ni des modèles 3D interactifs ni de la photogrammétrie.",
+  "image_policy": "Illustrations vectorielles originales en perspective 2,5D, sans menu de navigation. Les planches photoréalistes de prévisualisation peuvent être distinctes des SVG publiés. Distinguer les vestiges attestés, les phases chronologiques et les hypothèses. Pas de modèle 3D interactif.",
   "entries": [
     {
       "id": "DEL-001",
@@ -216,6 +216,78 @@
         "/sites/corinthe.html#pirene",
         "/reconstitutions-3d.html#cor-002",
         "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "SOU-001",
+      "slug": "sounion-temple-poseidon-440",
+      "region": "Attique",
+      "subregion": "Cap Sounion",
+      "site": "Sounion",
+      "monument": "Temple de Poséidon",
+      "period": "Vers 444–440 av. J.-C. (temple classique)",
+      "image": "/assets/reconstitutions/sounion-poseidon-440-av-jc.svg",
+      "image_type": "Illustration vectorielle originale en perspective 2,5D, sans éléments de navigation",
+      "attested": [
+        "Temple dorique périptère en marbre local (Agrileza), six colonnes en façade et treize par flanc",
+        "Temple classique succédant au projet archaïque détruit par les Perses en 480 av. J.-C.",
+        "Sanctuaire maritime aménagé sur un promontoire du cap Sounion"
+      ],
+      "hypothetical": [
+        "Élévation complète des structures manquantes et partie de la couverture",
+        "Teintes et détails décoratifs de la restitution",
+        "Profil des falaises et proportions de la perspective non métriques"
+      ],
+      "certainty": {
+        "implantation": "élevée",
+        "plan_colonnade": "élevée",
+        "restitution_toit": "moyenne",
+        "couleurs_et_paysage": "faible"
+      },
+      "sources": [
+        "https://perseus-aa.github.io/items/aa_373.html",
+        "https://sounion.ancientathens3d.com/sanctuary_of_poseidon/"
+      ],
+      "historical_crosslinks": [
+        "/sites/sounion.html#poseidon",
+        "/reconstitutions-3d.html#sou-001",
+        "/mythologie-grecque.html"
+      ]
+    },
+    {
+      "id": "SOU-002",
+      "slug": "sounion-temple-athena-sounias",
+      "region": "Attique",
+      "subregion": "Cap Sounion",
+      "site": "Sounion",
+      "monument": "Temple d'Athéna Sounias",
+      "period": "Ve siècle av. J.-C. (datation approximative vers 470–450 av. J.-C. ; colonnade possiblement postérieure)",
+      "image": "/assets/reconstitutions/sounion-athena-ve-siecle.svg",
+      "image_type": "Illustration vectorielle originale en perspective 2,5D, non métrique et sans menu de site",
+      "attested": [
+        "Temple ionique au plan exceptionnel, colonnade seulement sur les côtés sud et est (en L)",
+        "Cella approximativement 16,4 × 11,6 m avec quatre supports internes",
+        "Sanctuaire distinct de celui de Poséidon, environ 500 m au nord-est"
+      ],
+      "hypothetical": [
+        "Restitution volumétrique de l'élévation et de la couverture",
+        "Phase exacte associée aux colonnes de l'image et interprétation de leur insertion",
+        "Coloris, paysage reconstitué et position des détails architecturaux"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "chronologie_architecturale": "moyenne",
+        "élévation": "faible_à_moyenne",
+        "polychromie": "faible"
+      },
+      "sources": [
+        "https://perseus-aa.github.io/items/aa_372.html",
+        "https://sounion.ancientathens3d.com/sanctuary-of-athena/"
+      ],
+      "historical_crosslinks": [
+        "/sites/sounion.html#athena",
+        "/reconstitutions-3d.html#sou-002",
+        "/mythologie-grecque.html"
       ]
     }
   ]
