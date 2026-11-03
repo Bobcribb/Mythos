@@ -75,14 +75,15 @@ from html import escape
 cards="".join('<article><img loading="lazy" src="'+escape(x["src"])+'" alt="'+escape(x["title"])+'"><h2>'+escape(x["title"])+'</h2><p>'+escape(x["region"])+' · '+escape(x["period"])+'</p><p>'+escape(x.get("certainty_level", "Certitude non réévaluée"))+'</p><p>'+escape(x["certainty"])+'</p>'+('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(x["source_url"])+'">Source institutionnelle</a></p>' if x.get("source_url") else '<p>Référence institutionnelle à compléter</p>')+'</article>' for x in existing)
 page='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MYTHOS — Reconstitutions photoréalistes</title><style>body{background:#0c0e10;color:#eee0c1;margin:0;font-family:Georgia,serif}header{text-align:center;padding:3rem 1rem;border-bottom:1px solid #aa8744}h1,h2{color:#dfba71}main{max-width:1250px;margin:auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem}article{padding:1rem;border:1px solid #9b7b40;background:#17191b}img{width:100%;height:auto}a{color:#dfba71}</style></head><body><header><h1>MYTHOS — Reconstitutions 3D photoréalistes</h1><p>Illustrations interprétatives, non modèles interactifs ni relevés métriques</p><a href="/Mythos/reconstitutions-3d.html">Consulter les notices scientifiques</a></header><main>'+cards+'</main></body></html>'
 (root/"reconstitutions-photorealistes.html").write_text(page,encoding="utf-8")
-# Link from the existing documented atlas only once a real image was created.
+# Link from the existing documented atlas only after an image is generated.
 atlas = root / "reconstitutions-3d.html"
 if atlas.exists():
     html = atlas.read_text(encoding="utf-8")
-    link = '<p><a href="/Mythos/reconstitutions-photorealistes.html">Voir la galerie photoréaliste effectivement publiée →</a></p>'
+    gallery_url = "/Mythos/reconstitutions-photorealistes.html"
     anchor = '</section>\\n<nav class="r3d-subnav"'
-    if "Voir la galerie photoréaliste effectivement publiée" not in html and anchor.replace("\\\\n","\\n") in html:
-        html = html.replace(anchor.replace("\\\\n","\\n"), link + '</section>\\n<nav class="r3d-subnav"', 1)
+    if gallery_url not in html and anchor in html:
+        link = '<p><a href="' + gallery_url + '">Voir les reconstitutions photoréalistes effectivement publiées →</a></p>'
+        html = html.replace(anchor, link + anchor, 1)
         atlas.write_text(html, encoding="utf-8")
 
 print("Generated",dest)
