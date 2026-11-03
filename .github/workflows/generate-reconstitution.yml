@@ -14,20 +14,23 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Vérifier la configuration API
+        id: config
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
-          if [ -z "$OPENAI_API_KEY" ]; then
+          if [ -n "$OPENAI_API_KEY" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
             echo "::notice::Configurer OPENAI_API_KEY dans les secrets du dépôt avant toute génération."
-            exit 0
           fi
       - name: Générer une reconstitution
-        if: ${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ steps.config.outputs.enabled == 'true' }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/generate_reconstitution.py
       - name: Publier
-        if: ${{ env.OPENAI_API_KEY != '' }}
+        if: ${{ steps.config.outputs.enabled == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
