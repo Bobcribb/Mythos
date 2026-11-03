@@ -135,3 +135,5 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Correction de catalogue :** remplacement de trois séquences littérales `\\n` erronées par de véritables retours à la ligne dans le sommaire Markdown ; correction d'un chemin relatif erroné vers le recueil I–XXVII.
 
 **Limites :** la disponibilité sur GitHub et la reprise documentaire sont vérifiées. Aucune vérification bibliographique exhaustive, aucun test visuel dans tous les navigateurs et aucune garantie de déploiement de bobmythos.fr ne sont revendiqués. Aucune automatisation MYTHOS n'a été modifiée.
+
+**Contrôle pré-déploiement GitHub Pages :** le workflow `.github/workflows/pages.yml` vérifie désormais la présence des deux lecteurs et des deux sources Markdown, un seuil de taille de 50 000 octets par manuscrit, les ancres des premiers/derniers chapitres et celles des bibliographies, ainsi que le lien de la collection vers le tome XXXIII. Ce garde-fou n'atteste pas à lui seul que le déploiement public a réussi.
