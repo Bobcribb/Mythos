@@ -23,6 +23,8 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Générer les lectures intégrales de Daidalos et vérifier leur source
         run: python3 scripts/build-daidalos.py
+      - name: Intégrer Polyidos, ses lectures intégrales et les liens réciproques
+        run: python3 scripts/build-polyidos.py
       - name: Vérifier les pages essentielles
         run: |
           test -s index.html
@@ -46,6 +48,14 @@ jobs:
           test -s corpus/theatre-grec/comedies/daidalos-etude.html
           test -s corpus/theatre-grec/comedies/daidalos-scenes-modernes.html
           test -s corpus/theatre-grec/comedies/daidalos-controle.json
+          test -s corpus/theatre-grec/comedies/polyidos-etude.html
+          test -s corpus/theatre-grec/comedies/polyidos-scenes-modernes.html
+          test -s corpus/theatre-grec/comedies/polyidos-controle.json
+          grep -q 'id="bibliographie"' corpus/theatre-grec/comedies/polyidos-etude.html
+          grep -q 'polyidos-etude.html' theatre-grec.html
+          grep -q 'polyidos-etude.html' philosophie.html
+          grep -q 'polyidos-etude.html' sommaire-general.html
+          grep -q 'polyidos-etude.html' corpus/theatre-grec/comedies/daidalos-etude.html
           echo "Pages MYTHOS présentes dans l'artefact"
       - name: Préparer les fichiers
         uses: actions/upload-pages-artifact@v3

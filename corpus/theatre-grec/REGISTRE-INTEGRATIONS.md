@@ -34,3 +34,32 @@ Rendus locaux inspectés en Chromium à 360, 390, 768 et 1 440 pixels, sur les d
 Le contrôle établit la fidélité au manuscrit et sa répartition, pas une validation scientifique exhaustive. Les réserves du manuscrit sur la collation des fragments et l'interprétation moderne sont conservées. Aucune nouvelle scène n'a été inventée pendant cette intégration. Le succès du déploiement doit être vérifié séparément dans GitHub Actions ; l'accès indépendant à bobmythos.fr n'est pas certifié par ce registre.
 
 Les tomes des Origines du sacré déjà intégrés, tous les anciens textes et toutes les archives demeurent inchangés. Aucun autre dépôt n'a été modifié. Aucune programmation horaire MYTHOS n'a été changée.
+
+## 3 novembre 2026 — Polyidos, dossier TH-COM-POL
+
+### Source et conservation
+
+Source : `Bobcribb/Bobcribb.github.io`, `chapitres/comedies/volume-025-aristophane-polyidos.md`, version `fafe12416fc918d2576116cd0a4e0a9a2836ee11`. Manuscrit préexistant, absent de la collection Théâtre du dépôt cible lors du contrôle ; nouvelle intégration dans Mythos, non nouvelle rédaction.
+
+[Manuscrit source intégral](comedies/polyidos-source.md) : **16 288 octets, 15 806 caractères, 165 lignes, 19 sections**. Empreinte Git originale et copie : `46c2cd20c5d797aee436bd83b429a8ffeef0e76b`. SHA-256 : `02e0491573f1f495cf993124f5bf45a7b564c776368ff09de37bc19df53885e2`.
+
+### Lectures et classement
+
+- **TH-03-POL** : [étude critique](comedies/polyidos-etude.html), sections I–XIII et XVII–XIX, soit 16 sections, préambule, bibliographie et conclusion conservés.
+- **TH-02-POL** : [scènes modernes](comedies/polyidos-scenes-modernes.html), sections XIV–XVI, soit trois dialogues contemporains expressément non antiques.
+
+Aucune section n'est abrégée, omise ou publiée deux fois dans les lecteurs. Les repères du volume source XXV sont conservés. La copie Markdown contient aussi le front matter et les liens historiques originaux. Les URL de navigation sont adaptées uniquement dans le rendu, avec renvoi aux archives historiques pour les dossiers non transférés.
+
+### Génération, navigation et graphisme
+
+`python3 scripts/build-polyidos.py`, après `build-daidalos.py`, génère les deux lecteurs et le rapport technique. Il insère les cartes dans Théâtre, le renvoi dans Philosophie parmi les analyses liées aux pièces, l'entrée au sommaire général et les liens réciproques depuis Daidalos. Ces ajouts sont produits dans l'artefact Pages : les sources HTML préexistantes restent conservées dans Git. Une seconde génération ne crée aucun doublon.
+
+Bandeau noir et or avec le SVG existant (statue stylisée à gauche, temple à droite), cartes illustrées décoratives, raccourcis vers texte/bibliographie/source, sommaire repliable et zones de navigation tactile d'au moins 44 pixels dans le lecteur. Aucun visuel n'est présenté comme une reconstitution archéologique.
+
+### Contrôles et limites
+
+Comparaison indépendante locale avec MarkdownIt et BeautifulSoup : **19 sections sur 19 et préambule identiques en texte lisible**. Empreinte source exacte, séparation des trois sections [C], ancres, absence de doublons et idempotence contrôlées. Huit essais Chromium sur les deux lecteurs, à 360, 390, 768 et 1 440 pixels : aucun débordement horizontal, premier lien du sommaire fonctionnel. [Résultats locaux](comedies/polyidos-verifications-locales.json).
+
+Les essais locaux incorporent les CSS et le SVG exacts du dépôt ; les pages de destination hors lecteurs sont des fixtures locales et ne prouvent pas le déploiement. GitHub Actions vérifie séparément les vrais fichiers de destination et les ancres, puis publie l'artefact. Le rapport `comedies/polyidos-controle.json` est généré à cette étape. La comparaison de texte ne constitue pas une collation scientifique exhaustive des fragments. La disponibilité du domaine public doit être confirmée indépendamment du succès de Pages.
+
+Toutes les archives précédentes restent conservées. Aucun autre dépôt ni aucune programmation MYTHOS n'a été modifié.
