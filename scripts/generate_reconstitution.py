@@ -57,16 +57,38 @@ manifest_path=root/"assets/reconstitutions-3d/photorealistes.json"
 manifest_path.parent.mkdir(parents=True,exist_ok=True)
 existing=json.loads(manifest_path.read_text(encoding="utf-8")) if manifest_path.exists() else []
 used={i["slug"] for i in existing}
-available=[item for item in items if item[0] not in used]
+# A monument-level image and an independent panoramic image for each site.
+# Never overwrite an existing image or repeat a published slug.
+available=[]
+for base_slug,site_title,region,period in items:
+    for view_kind in ("monument", "panorama"):
+        shot_slug=base_slug if view_kind=="monument" else base_slug+"-panorama"
+        if shot_slug not in used:
+            available.append((shot_slug,base_slug,site_title,region,period,view_kind))
 if not available:
-    print("All configured sites generated; no duplicates.")
+    print("All configured sites and panoramas generated; no duplicates.")
     raise SystemExit(0)
-slug,title,region,period=available[0]
-prompt=(f"Photorealistic archaeological 3D-rendered reconstruction of {title}, {region}, around {period}. "
-"One coherent immersive wide architectural view, natural Mediterranean light, realistic stone, landscape and building proportions, "
-"historically informed reconstruction with conservative architectural assumptions, no modern buildings. "
-"No website menu, no interface, no labels, no logos, no captions, no infographic panels, no fantasy architecture. "
-"This is an interpretive artistic reconstruction, not a metrically exact survey.")
+slug,base_slug,site_title,region,period,view_kind=available[0]
+view_label="Plan large panoramique" if view_kind=="panorama" else "Vue architecturale"
+title=(site_title+" — plan large du site") if view_kind=="panorama" else site_title
+view_prompt=(
+    "EXTREME WIDE ESTABLISHING PANORAMIC SHOT from a plausible elevated natural viewpoint: "
+    "show the ancient monument within its full sanctuary or town context, multiple buildings "
+    "and terraces only when archaeologically plausible, the local relief, access routes, "
+    "and distant landscape. Give the surroundings substantial space, not a close-up of a single façade. "
+    "Do not portray conjectural neighboring monuments as certainties. "
+    if view_kind=="panorama" else
+    "MEDIUM-WIDE ARCHITECTURAL VIEW from a believable visitor viewpoint, emphasizing the "
+    "principal monument, its columns or walls and immediate architectural context, with clear depth. "
+)
+prompt=(f"Photorealistic archaeological 3D-rendered reconstruction of {site_title}, {region}, around {period}. "
+    +view_prompt+
+    "Single continuous landscape composition in 3:2 format, natural Mediterranean lighting, realistic materials, "
+    "historically informed conservative proportions and archaeological restraint. "
+    "NO 2.5D diagram, NO axonometric map, NO flat illustration, NO infographic. "
+    "No website menu, interface, labels, logos, embedded captions, ornamental frame or fantasy architecture. "
+    "An interpretive view, not a metrically exact survey; uncertain reconstruction details must remain restrained."
+)
 payload={"model":"gpt-image-2","prompt":prompt,"size":"1536x1024","quality":"medium","output_format":"webp","output_compression":85,"n":1}
 req=urllib.request.Request("https://api.openai.com/v1/images/generations",data=json.dumps(payload).encode(),headers={"Authorization":"Bearer "+os.environ["OPENAI_API_KEY"],"Content-Type":"application/json"},method="POST")
 # Diagnose rate limiting versus billing/quota errors without displaying credentials.
@@ -94,10 +116,10 @@ if result is None:
 raw=base64.b64decode(result["data"][0]["b64_json"])
 dest=root/"assets/reconstitutions-3d"/(slug+".webp")
 dest.write_bytes(raw)
-existing.append({"slug":slug,"title":title,"region":region,"period":period,"src":"/Mythos/assets/reconstitutions-3d/"+dest.name,"certainty":"Reconstitution interprétative : élévations et couleurs à vérifier","created_at":datetime.now(timezone.utc).date().isoformat(),"source_url":references.get(slug),"certainty_level":"Moyen pour la topographie, faible pour les élévations restituées"})
+existing.append({"slug":slug,"title":title,"region":region,"period":period,"view_kind":view_kind,"view_label":view_label,"src":"/Mythos/assets/reconstitutions-3d/"+dest.name,"certainty":"Reconstitution interprétative : élévations et couleurs à vérifier","created_at":datetime.now(timezone.utc).date().isoformat(),"source_url":references.get(base_slug),"certainty_level":"Moyen pour la topographie, faible pour les élévations restituées"})
 manifest_path.write_text(json.dumps(existing,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 from html import escape
-cards="".join('<article><img loading="lazy" src="'+escape(x["src"])+'" alt="'+escape(x["title"])+'"><h2>'+escape(x["title"])+'</h2><p>'+escape(x["region"])+' · '+escape(x["period"])+'</p>'+('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(x["source_url"])+'">Source institutionnelle</a></p>' if x.get("source_url") else '')+'</article>' for x in existing)
+cards="".join('<article><img loading="lazy" src="'+escape(x["src"])+'" alt="'+escape(x["title"])+'"><h2>'+escape(x["title"])+'</h2><p>'+escape(x.get("view_label","Vue architecturale"))+' · '+escape(x["region"])+' · '+escape(x["period"])+'</p>'+('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(x["source_url"])+'">Source institutionnelle</a></p>' if x.get("source_url") else '')+'</article>' for x in existing)
 page='<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MYTHOS — Reconstitutions photoréalistes</title><style>body{background:#0c0e10;color:#eee0c1;margin:0;font-family:Georgia,serif}header{text-align:center;padding:3rem 1rem;border-bottom:1px solid #aa8744}h1,h2{color:#dfba71}main{max-width:1250px;margin:auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.4rem}article{padding:1rem;border:1px solid #9b7b40;background:#17191b}img{width:100%;height:auto}a{color:#dfba71}</style></head><body><header><h1>MYTHOS — Reconstitutions 3D photoréalistes</h1><a href="/Mythos/reconstitutions-3d.html">Consulter les notices scientifiques</a></header><main>'+cards+'</main></body></html>'
 (root/"reconstitutions-photorealistes.html").write_text(page,encoding="utf-8")
 # Link from the existing documented atlas only after an image is generated.
