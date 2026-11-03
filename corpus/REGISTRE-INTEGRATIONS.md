@@ -137,3 +137,17 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Limites :** la disponibilité sur GitHub et la reprise documentaire sont vérifiées. Aucune vérification bibliographique exhaustive, aucun test visuel dans tous les navigateurs et aucune garantie de déploiement de bobmythos.fr ne sont revendiqués. Aucune automatisation MYTHOS n'a été modifiée.
 
 **Contrôle pré-déploiement GitHub Pages :** le workflow `.github/workflows/pages.yml` vérifie désormais la présence des deux lecteurs et des deux sources Markdown, un seuil de taille de 50 000 octets par manuscrit, les ancres des premiers/derniers chapitres et celles des bibliographies, ainsi que le lien de la collection vers le tome XXXIII. Ce garde-fou n'atteste pas à lui seul que le déploiement public a réussi.
+
+
+## 3 novembre 2026 — ODS-CONV-XXV et XXVI : récupération de deux manuscrits intégraux
+
+**Audit préalable :** inspection de l'arborescence GitHub et recherche dans la Bibliothèque. Les tomes XXV (339–346) et XXVI (347–354) de **MYTHOS-OS-CONV** étaient absents de `corpus/origines-du-sacre/`. Le tome XXVII (355–362) était déjà présent. La collection **MYTHOS-OS-LIB** utilise une autre numérotation et n'a pas été fusionnée.
+
+- **ODS-CONV-XXV — Sanctuaires, espaces sacrés et géographie religieuse.** Source `MYTHOS_Origines_du_sacre_Tome_XXV_Ch339-346_2026-11-01.md`, 316 lignes, **47 280 caractères**, chapitres 339–346 (8/8), introduction, conclusion, bibliographie critique et registre. [Source Markdown sans réécriture](origines-du-sacre/conv-tome-XXV-chapitres-339-346.md) ; [page de lecture](origines-du-sacre/conv-tome-XXV-chapitres-339-346.html).
+- **ODS-CONV-XXVI — Les eaux sacrées et les cosmologies de la régénération.** Source `MYTHOS_Origines_du_sacre_Tome_XXVI_Ch347-354_2026-11-01.md`, 260 lignes, **35 509 caractères**, chapitres 347–354 (8/8), conclusion, sources primaires, bibliographie et registre. [Source Markdown sans réécriture](origines-du-sacre/conv-tome-XXVI-chapitres-347-354.md) ; [page de lecture](origines-du-sacre/conv-tome-XXVI-chapitres-347-354.html).
+
+**Vérifications après écriture :** les deux fichiers Markdown ont été relus depuis GitHub. Comparaison directe de la transcription HTML avec le texte source après extraction de la seule ligne de titre des chapitres (affichée dans les titres `h2` des lecteurs) : **46 636/46 636 caractères strictement identiques** pour XXV et **34 795/34 795** pour XXVI. Les 16 ancres internes, leurs liens de sommaire, deux conclusions et deux bibliographies sont présents. Le script `scripts/check-origines-conv-xxv-xxvi.py` vérifie ces propriétés et les liens locaux dans le workflow GitHub Pages.
+
+**Navigation et graphisme :** deux nouvelles cartes illustrées responsives dans `origines-du-sacre.html` ; liens dans `sommaire-general.html`, `corpus/sommaire-general.md` et `index.html` ; retour XXVII → XXVI et enchaînement XXV → XXVI → XXVII. Lecteur noir et or partagé, bandeau `assets/mythos-hero.svg` (statue à gauche, temple à droite), cibles de navigation plus visibles et focus clavier renforcé dans `assets/mythos-volume-lecture.css`. Les illustrations des cartes sont **décoratives**, non des reconstitutions historiques.
+
+**Limites :** l'intégrité documentaire est contrôlée dans le dépôt, mais cela ne vaut ni audit philologique exhaustif ni garantie d'affichage sur le domaine public. Le tome XXIV ODS-CONV n'est pas déclaré intégré. Aucun changement aux autres archives ni aux automatisations MYTHOS.
