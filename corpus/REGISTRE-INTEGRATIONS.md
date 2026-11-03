@@ -151,3 +151,18 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Navigation et graphisme :** deux nouvelles cartes illustrées responsives dans `origines-du-sacre.html` ; liens dans `sommaire-general.html`, `corpus/sommaire-general.md` et `index.html` ; retour XXVII → XXVI et enchaînement XXV → XXVI → XXVII. Lecteur noir et or partagé, bandeau `assets/mythos-hero.svg` (statue à gauche, temple à droite), cibles de navigation plus visibles et focus clavier renforcé dans `assets/mythos-volume-lecture.css`. Les illustrations des cartes sont **décoratives**, non des reconstitutions historiques.
 
 **Limites :** l'intégrité documentaire est contrôlée dans le dépôt, mais cela ne vaut ni audit philologique exhaustif ni garantie d'affichage sur le domaine public. Le tome XXIV ODS-CONV n'est pas déclaré intégré. Aucun changement aux autres archives ni aux automatisations MYTHOS.
+
+
+## 3 novembre 2026 — Réconciliation du registre fusionné et contrôle de présence
+
+**Correction du sommaire :** `corpus/sommaire-general.md` répertorie désormais explicitement les deux volets du volume historique XXXII *Ploutos I* (`TH-03-PL1` et `TH-02-PL1`) avec les liens vers l'étude, les scènes modernes et l'archive source. Les pages existaient déjà dans le dépôt et figuraient au sommaire HTML ; il ne s'agit **pas** d'une nouvelle publication de volume ni d'une duplication de texte.
+
+**Contrôle effectué :** les **50 chemins de fichiers locaux uniques** référencés par des liens Markdown du sommaire général `corpus/sommaire-general.md` ont été interrogés par chemin exact sur la branche par défaut de `Bobcribb/Mythos`. **50/50 fichiers existent dans GitHub ; 0 chemin manquant** pour ce périmètre précis. Ce contrôle vérifie l'existence des cibles, **pas** leur exhaustivité textuelle, les ancres internes, la fonctionnalité des liens HTML externes au sommaire, ni leur accessibilité sur le domaine public.
+
+**Vérification publique :** les tentatives d'ouverture indépendante de `https://bobmythos.fr/`, de `/corpus/theatre-grec/comedies/ploutos-protos-etude.html` et de `/corpus/theatre-grec/comedies/triphales-etude.html` ont échoué dans l'outil de consultation. Il est donc **impossible de certifier la présence sur le domaine public**, et non démontré que le site soit indisponible pour ses visiteurs. Les anciens comptes rendus de déploiement ne remplacent pas ce contrôle HTTP actuel.
+
+**Contenus en attente :** le registre de récupération `corpus/mythologie-grecque/REGISTRE-RECUPERATION.md` signale encore Chiron, les chapitres 118–133 et 218–224 comme textes non extraits mot à mot ; leur présence dans le site **ne peut pas être déclarée** sur la base de ces mentions. Les rubriques GE et MC ne disposent pas ici d'une concordance exhaustive établie entre tous les manuscrits historiques et leurs pages. Le volume XXIV de la série ODS-CONV n'est pas validé comme transféré.
+
+**Suite exigée avant toute certification « tout publié » :** établir un inventaire de chaque manuscrit complet, sa cote, son empreinte, son HTML, le renvoi depuis les sommaires, son résultat de déploiement et le résultat HTTP de son URL ; comparer le texte intégral, les sources et la bibliographie. Ne pas confondre la simple existence d'un fichier, une entrée au registre, un build Pages réussi et une page effectivement consultable sur `bobmythos.fr`.
+
+Aucun manuscrit existant n'a été modifié ou effacé par cette réconciliation et aucune autre automatisation MYTHOS n'a été modifiée.
