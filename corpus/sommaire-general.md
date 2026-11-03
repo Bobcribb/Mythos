@@ -40,6 +40,8 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 - **TH-03 — Analyses philosophiques liées aux pièces**, avec renvois réciproques, sans mélange avec les résumés.
 - **TH-03-HOL — Aristophane, *Holkades*, étude critique (16 sections)** : [lecture complète](theatre-grec/comedies/holkades-etude.html), avec sources et bibliographie.
 - **TH-02-HOL — *Holkades*, trois scènes contemporaines** : [créations distinctes](theatre-grec/comedies/holkades-scenes-modernes.html) ; [manuscrit historique intégral](theatre-grec/comedies/holkades-source.md).
+- **TH-03-LEM — Aristophane, *Lemniai* (Les Lemniennes)** : [étude critique intégrale de 19 sections](theatre-grec/comedies/lemniai-etude.html), avec bibliographie et degrés de certitude.
+- **TH-02-LEM — Trois scènes modernes [C]** : [créations contemporaines](theatre-grec/comedies/lemniai-scenes-modernes.html), distinctes de l’étude. [Manuscrit source historique complet (volume XXX)](theatre-grec/comedies/lemniai-source.md).
 - Les textes perdus, fragments et reconstitutions doivent être signalés distinctement.
 
 ## PH — Philosophie
