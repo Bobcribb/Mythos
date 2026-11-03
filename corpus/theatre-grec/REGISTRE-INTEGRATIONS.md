@@ -1,5 +1,14 @@
 # Théâtre grec — Registre des intégrations contrôlées
 
+## 3 novembre 2026 — *Triphalēs* (Aristophane), comédies grecques XXXIII
+
+**Provenance :** [manuscrit historique complet](https://github.com/Bobcribb/Bobcribb.github.io/blob/dedd1e488dd4300479e2c430f7ce435f7fe4b136/chapitres/comedies/volume-033-aristophane-triphales.md), blob Git `d59cac3b1838b36b3879e9bcfd4f12c9e4bc7ad4`, 12857 octets, préambule et 22 sections. [Copie exacte](comedies/triphales-source.md), sans intervention sur l'archive d'origine. Aucun lecteur Triphalēs publié dans le dépôt courant avant cette intégration.
+
+**Publication éditoriale :** [TH-03-TRI, étude critique](comedies/triphales-etude.html) = sections 1–17, 21 et 22 (19 sections, sources et bibliographie incluses) ; [TH-02-TRI, scènes modernes](comedies/triphales-scenes-modernes.html) = 18–20, sans attribution antique. Texte visible de 22 sections et introduction comparés avec le rendu historique, sans raccourcissement. Contrôle de fidélité automatisé ; aucune collation philologique indépendante n'est revendiquée.
+
+**Interface :** sommaires, liens réciproques depuis *Ploutos I*, accueil, Théâtre, Philosophie et sommaire général ; bannière statue/temple, thème noir/or, figure schématique et responsive. Archives et autres automatisations préservées. Déploiement public à confirmer.
+
+
 ## 3 novembre 2026 — Ploutos I, comédies grecques XXXII (TH-COM-PL1)
 
 Source complète : [manuscrit du dépôt historique](https://github.com/Bobcribb/Bobcribb.github.io/blob/f740d6a4ef3b02d30f9e41cafbc5a9b640c8f5dc/chapitres/comedies/volume-032-aristophane-ploutos-protos.md), commit `f740d6a4ef3b02d30f9e41cafbc5a9b640c8f5dc`, blob Git `83d0ebf6f67e6092baf27d120b7440fea65d3d8a`. Copie identique dans [ploutos-protos-source.md](comedies/ploutos-protos-source.md) : 12319 octets, 11931 caractères. Aucun dossier Ploutos I publié auparavant dans `Bobcribb/Mythos` au commit `40cc6bad5b6f` : la référence depuis Gēras était un lien vers l'archive historique.

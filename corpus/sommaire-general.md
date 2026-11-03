@@ -44,6 +44,8 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 - **TH-02-LEM — Trois scènes modernes [C]** : [créations contemporaines](theatre-grec/comedies/lemniai-scenes-modernes.html), distinctes de l’étude. [Manuscrit source historique complet (volume XXX)](theatre-grec/comedies/lemniai-source.md).
 - **TH-03-GER — Aristophane, *Gēras* (La Vieillesse), volume XXXI** : [étude intégrale, 19 sections](theatre-grec/comedies/geras-etude.html), sources et bibliographie.
 - **TH-02-GER — Gēras, trois scènes [C] contemporaines** : [scènes distinctes](theatre-grec/comedies/geras-scenes-modernes.html) ; [manuscrit historique original intégral, 22 sections](theatre-grec/comedies/geras-source.md).
+- **TH-03-TRI — Aristophane, *Triphalēs* (volume historique XXXIII)** : [étude critique intégrale (19 sections)](theatre-grec/comedies/triphales-etude.html), sources et bibliographie.
+- **TH-02-TRI — Trois scènes [C] contemporaines** : [scènes distinctes](theatre-grec/comedies/triphales-scenes-modernes.html), [manuscrit intégral (22 sections)](theatre-grec/comedies/triphales-source.md).
 - Les textes perdus, fragments et reconstitutions doivent être signalés distinctement.
 
 ## PH — Philosophie
