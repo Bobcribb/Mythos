@@ -166,3 +166,12 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Suite exigée avant toute certification « tout publié » :** établir un inventaire de chaque manuscrit complet, sa cote, son empreinte, son HTML, le renvoi depuis les sommaires, son résultat de déploiement et le résultat HTTP de son URL ; comparer le texte intégral, les sources et la bibliographie. Ne pas confondre la simple existence d'un fichier, une entrée au registre, un build Pages réussi et une page effectivement consultable sur `bobmythos.fr`.
 
 Aucun manuscrit existant n'a été modifié ou effacé par cette réconciliation et aucune autre automatisation MYTHOS n'a été modifiée.
+
+
+## 3 novembre 2026 — Chapitre historique ODS-H-487 : Iran et Inde
+
+**Source retrouvée dans le dépôt historique :** `Bobcribb/Bobcribb.github.io/chapitres/origines-du-sacre/487-iran-inde-mithra-rta-satya.md`, blob Git `70d6aef3fcdecb993f6c2d3bbd7d52969821d9a3`, 4 391 caractères. Six sous-sections 487.1–487.6, préambule, sources primaires (Mihr Yašt, Rig-Veda, Manusmṛti) et bibliographie (Iranica, Jamison/Brereton, Dumézil, Olivelle). Source lue intégralement avant transfert ; les deux chemins ci-dessous étaient absents du dépôt courant au contrôle préalable.
+
+**Archive sans réécriture :** [chapitre 487 Markdown](origines-du-sacre/chapitre-487-iran-inde-mithra-rta-satya.md). **Lecteur complet :** [chapitre 487 HTML](origines-du-sacre/chapitre-487-iran-inde-mithra-rta-satya.html). Six sections et bibliographie conservées ; thème sombre et or, bandeau SVG statue/temple, sommaire à ancres et styles mobiles. Entrées ajoutées au sommaire Markdown et à la page `origines-du-sacre.html`. Cote **ODS-H-487**, série historique indépendante des éditions ODS-LIB et ODS-CONV ; numéro d'origine non altéré.
+
+**Limites :** comparaison d'empreinte Git du Markdown à confirmer après le dernier commit ; liens et HTTP publics non confirmés dans cette exécution, car l'outil d'accès externe ne parvient pas à ouvrir le domaine `bobmythos.fr`. Les références anciennes ont été conservées telles quelles et non revérifiées philologiquement. Ne pas interpréter une création GitHub comme preuve de déploiement. Aucune archive préexistante ni automatisation n'a été modifiée.
