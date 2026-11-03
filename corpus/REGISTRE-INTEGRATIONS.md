@@ -93,3 +93,17 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Navigation :** liens ajoutés dans `origines-du-sacre.html`, `sommaire-general.html` et `corpus/sommaire-general.md`. Sommaire de huit chapitres, ancres de conclusion et bibliographie, retour à la collection, lien au manuscrit source. Ni les archives ni les autres automatisations MYTHOS n'ont été modifiées.
 
 **Périmètre du contrôle :** intégrité de la copie source et présence des repères documentaires ; les références scientifiques individuelles ne sont pas toutes revérifiées ici. La disponibilité publique après déploiement reste à confirmer séparément. Le tome XXIX, chapitre 378, est seulement mentionné par la source : aucun faux lien de continuité n'a été créé.
+
+
+## 3 novembre 2026 — Deux volumes intégraux supplémentaires, série MYTHOS-OS-CONV
+
+| Cote | Tome et chapitres | Source en Bibliothèque, version 1 | Archive exacte dans GitHub | Page HTML |
+|---|---|---|---|---|
+| ODS-CONV-XXIX | XXIX, chapitres 371–378, arbres sacrés et jardins de l'immortalité | `MYTHOS_Origines_du_sacre_Tome_XXIX_Ch371-378_2026-11-01.md` | [Markdown source](origines-du-sacre/conv-tome-XXIX-chapitres-371-378.md) | [Édition lisible](origines-du-sacre/conv-tome-XXIX-chapitres-371-378.html) |
+| ODS-CONV-XXXI | XXXI, chapitres 387–394, images divines et rituels d'animation | `MYTHOS_Origines_du_sacre_Tome_XXXI_Ch387-394_2026-11-01.md` | [Markdown source](origines-du-sacre/conv-tome-XXXI-chapitres-387-394.md) | [Édition lisible](origines-du-sacre/conv-tome-XXXI-chapitres-387-394.html) |
+
+**Contrôle des sources :** lecture du tome XXIX sur 306 lignes sans pagination ; 41 064 caractères textuels, huit chapitres 371–378, bibliographie et fin du fichier. Lecture du tome XXXI sur 1 170 lignes, en deux tranches jointives (1–1000 puis 1001–1170), sans omission ni recouvrement ; 64 741 caractères textuels, huit chapitres 387–394, bibliographie et registre final. Les marques Markdown d'origine sont conservées dans les pages HTML, sans résumé ni condensation. Les archives Markdown rendent possible la confrontation avec les fichiers de Bibliothèque.
+
+**Liens :** `origines-du-sacre.html`, `sommaire-general.html`, `corpus/sommaire-general.md` renvoient aux deux éditions HTML. Chaque nouvelle page contient huit ancres de chapitres, des liens vers sa source Markdown et le retour à la collection ; les tomes se relient au tome XXX déjà présent. Ne pas confondre ces cotes avec les tomes homonymes de MYTHOS-OS-LIB.
+
+**Limites :** l'intégrité documentaire et les liens sont vérifiables dans GitHub, mais l'audit scientifique de chaque citation, la fidélité du rendu visuel sur appareil et le déploiement du domaine public ne sont pas certifiés par cette intervention. Aucun texte précédent ni aucune automatisation n'ont été modifiés.
