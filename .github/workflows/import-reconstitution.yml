@@ -14,6 +14,10 @@ on:
         description: "Identifiant unique en minuscules et tirets"
         required: true
         type: string
+      source_url:
+        description: "Lien HTTPS vers la source institutionnelle (UNESCO, ministère, institut archéologique)"
+        required: false
+        type: string
 permissions:
   contents: write
 concurrency:
@@ -33,6 +37,7 @@ jobs:
           IMAGE_URL: ${{ inputs.image_url }}
           SITE_NAME: ${{ inputs.site_name }}
           SITE_SLUG: ${{ inputs.site_slug }}
+          SOURCE_URL: ${{ inputs.source_url }}
         run: python scripts/import_reconstitution.py
       - name: Publier les fichiers
         run: |
