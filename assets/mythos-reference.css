@@ -30,3 +30,43 @@ footer{padding:30px 20px;text-align:center;border-top:1px solid #5c4b35;backgrou
 
 /* Bandeau original hébergé dans le dépôt, sans dépendance à des photos aléatoires */
 .hero-archive:before,body[data-collection] .hero-archive:before{background-image:url('/assets/mythos-hero.svg')!important;background-size:cover!important;background-position:center!important;filter:none!important}.hero-archive:after{background:linear-gradient(90deg,transparent 0%,#080d0f40 35%,#080d0f55 60%,transparent 100%)!important}.hero-archive{min-height:300px!important}
+
+/* MYTHOS — système de composition transversal, référence visuelle 1536 × 1024 */
+:root{--bg:#0a0d0e;--panel:#101416;--gold:#c9a36e;--cream:#f2e9da;--line:#65533e}
+body{background:#0a0d0e!important;color:var(--cream);font-family:Georgia,'Times New Roman',serif!important}
+.masthead{height:auto;min-height:75px!important;padding:8px clamp(20px,4.2vw,66px)!important;gap:28px!important;border-bottom:1px solid #a08259!important}
+.brand{font:500 39px/1 'Cormorant Garamond',Georgia,serif!important;letter-spacing:.12em!important;color:#e5c08b!important}
+.brand small{font:8px/1.3 Georgia,serif!important;letter-spacing:.21em!important}
+.pillar{font-size:38px!important;color:#c9a36e}
+.navlinks{gap:clamp(13px,1.65vw,29px)!important;font:17px/1.25 'Cormorant Garamond',Georgia,serif!important}
+.navlinks a{white-space:nowrap;padding:7px 0!important}
+.hero-archive{min-height:290px!important;padding:35px 20px!important;border-bottom:1px solid #8b6b46!important;background:#080c0e!important}
+.hero-archive:before{background:url('/assets/mythos-hero.svg') center/cover no-repeat!important;filter:none!important}
+.hero-archive:after{background:linear-gradient(90deg,transparent 0%,#080c0e18 28%,#080c0e66 44%,#080c0e55 59%,transparent 83%)!important}
+.hero-archive>div{width:min(100%,770px);max-width:770px!important}
+.hero-archive h1{font:500 clamp(45px,5vw,70px)/1.08 'Cormorant Garamond',Georgia,serif!important;letter-spacing:.07em!important;color:#f2e9db!important}
+.hero-archive h1:after{width:min(78%,520px)!important;margin:11px auto 0!important;background:#d0b17e!important}
+.hero-archive p{font:400 clamp(24px,2.3vw,32px)/1.18 'Cormorant Garamond',Georgia,serif!important;letter-spacing:.035em;color:#f1e5d2!important;margin:12px 0 17px!important}
+.hero-archive .intro{font:15px/1.55 Georgia,serif!important;max-width:600px!important;color:#e5ded2!important}
+.container{width:min(100% - 12.5%,1450px)!important;padding:26px 0 42px!important}
+.container h2,.directory h2{font:500 clamp(34px,3.2vw,46px)/1.12 'Cormorant Garamond',Georgia,serif!important;margin:0 0 8px!important}
+.lede{font:15px/1.5 Georgia,serif!important;color:#e0d7c9!important;margin-bottom:16px!important}
+.volume-grid,.compact-tomes{display:grid!important;grid-template-columns:repeat(6,minmax(0,1fr))!important;gap:12px!important}
+.volume{height:113px!important;min-height:113px!important;padding:7px!important;gap:12px!important;background:#0d1214!important;border:1px solid #5a5750!important;overflow:hidden}
+.volume .thumb,.compact-tomes .thumb{height:98px!important;width:40%!important;flex:0 0 40%!important;filter:sepia(.17) brightness(.86)!important}
+.volume strong{font:500 19px/1.15 'Cormorant Garamond',Georgia,serif!important;color:#f2e6d5!important}
+.volume small{font:12px/1.3 Georgia,serif!important;color:#e1d8cc!important}
+.volume em{font:21px/1 Georgia,serif!important;color:#c9a36e!important}
+.collection-grid{gap:12px!important}
+.collection-tile{border-radius:0!important;background:#0e1416!important;min-height:185px!important;padding:18px!important}
+.collection-tile h3{font-size:30px!important;color:#f2e6d5!important}
+.collection-tile p{font:14px/1.5 Georgia,serif!important;color:#d2c5b5!important}
+.section-dark{background:#0b1012!important;border-top:1px solid #826747!important}
+.archive-tiles img{filter:sepia(.12) brightness(.86)!important}
+.archive-tiles a{font:14px/1.4 Georgia,serif!important}
+.action{font:14px Georgia,serif!important;border-color:#c9a36e!important}
+.remaining-tomes summary{font:24px 'Cormorant Garamond',Georgia,serif!important}
+@media(max-width:1300px){.volume-grid,.compact-tomes{grid-template-columns:repeat(4,minmax(0,1fr))!important}.navlinks{gap:13px!important;font-size:15px!important}}
+@media(max-width:900px){.volume-grid,.compact-tomes{grid-template-columns:repeat(3,minmax(0,1fr))!important}.container{width:calc(100% - 40px)!important}.masthead{flex-wrap:wrap!important}.navlinks{justify-content:center!important;width:100%}}
+@media(max-width:600px){.volume-grid,.compact-tomes{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}.volume{height:103px!important;min-height:103px!important}.volume .thumb,.compact-tomes .thumb{height:88px!important}.volume strong{font-size:17px!important}.volume small{font-size:11px!important}.container{width:calc(100% - 28px)!important}.hero-archive{min-height:280px!important}.hero-archive h1{font-size:43px!important}.navlinks{gap:10px!important}}
+@media(max-width:370px){.volume-grid,.compact-tomes{grid-template-columns:1fr!important}}
