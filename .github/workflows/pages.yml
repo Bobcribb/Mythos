@@ -25,6 +25,8 @@ jobs:
         run: python3 scripts/build-daidalos.py
       - name: Intégrer Polyidos, ses lectures intégrales et les liens réciproques
         run: python3 scripts/build-polyidos.py
+      - name: Auditer Aiolosikōn (source exacte, texte complet, liens internes)
+        run: python3 scripts/check-aiolosikon.py
       - name: Contrôler l'intégralité des tomes ODS-CONV XXV et XXVI
         run: python3 scripts/check-origines-conv-xxv-xxvi.py
       - name: Vérifier les pages essentielles
