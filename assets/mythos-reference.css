@@ -114,3 +114,20 @@ body{background:#0a0d0e!important;color:var(--cream);font-family:Georgia,'Times 
 .remaining-tomes summary:focus-visible{outline:2px solid #e8c68e;outline-offset:5px}
 .remaining-tomes[open] summary span[aria-hidden]{display:inline-block;transform:rotate(90deg)}
 @media(max-width:600px){.remaining-tomes summary:before,.remaining-tomes summary:after{display:none!important}.remaining-tomes summary{font-size:21px!important;padding:10px 12px!important}}
+
+/* Finition de la maquette commune : en-tête, hiérarchie et lecture */
+.masthead{min-height:76px;display:grid!important;grid-template-columns:max-content minmax(0,1fr);gap:clamp(20px,3vw,55px)!important;align-items:center;padding-block:9px!important}
+.masthead .brand{min-width:0}
+.masthead .navlinks{min-width:0;justify-content:flex-end;flex-wrap:nowrap!important;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;scrollbar-color:#796344 transparent;white-space:nowrap;padding:4px 0}
+.masthead .navlinks a{flex:0 0 auto;font:500 clamp(13px,1.12vw,17px)/1.4 'Cormorant Garamond',Georgia,serif!important;letter-spacing:.01em}
+.hero-archive{min-height:290px!important}
+.hero-archive h1{text-wrap:balance}
+.hero-archive h1:after{background:linear-gradient(90deg,transparent,#c9a671 12%,#c9a671 88%,transparent)!important}
+.hero-archive .intro{text-wrap:pretty}
+.container h2,.directory h2{text-wrap:balance}
+.volume-grid .volume{position:relative;min-width:0;overflow:hidden}
+.volume-grid .volume>span:last-child{min-width:0}
+.volume-grid .volume strong,.volume-grid .volume small{overflow-wrap:break-word}
+.volume-grid .volume:focus-visible,.collection-grid a:focus-visible,.archive-tiles a:focus-visible{outline:2px solid #e6c18c;outline-offset:2px}
+@media(max-width:900px){.masthead{grid-template-columns:1fr!important;gap:5px!important;padding:12px 22px!important}.masthead .navlinks{justify-content:flex-start!important;width:100%}.masthead .brand{font-size:30px!important}.hero-archive{min-height:265px!important}}
+@media(max-width:480px){.masthead{padding:10px 16px!important}.masthead .navlinks a{font-size:15px!important}.hero-archive{padding:35px 16px!important}.hero-archive h1{letter-spacing:.025em!important}.container{width:calc(100% - 28px)!important}}
