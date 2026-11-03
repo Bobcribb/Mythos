@@ -23,6 +23,7 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 
 ## ODS — Origines du sacré
 - **ODS-01 — Édition intégrale retrouvée, tomes I–XXVII** : [Lire les tomes](../origines-du-sacre/edition-integrale-tomes-I-XXVII.html).
+- **ODS-S28 — Série de suivi, tome XXVIII, chapitres 363–370** : [Lire le manuscrit intégral](origines-du-sacre/tome-XXVIII-chapitres-363-370.html) et [consulter la source Markdown conservée](origines-du-sacre/tome-XXVIII-chapitres-363-370.md). Huit chapitres, sources et bibliographie ; revue scientifique encore requise. Les numéros 363–370 demeurent ceux du document original ; ne pas les confondre avec les numéros d'autres éditions cumulatives.
 - Les chapitres produits après cette édition devront être rapprochés de leurs sources avant intégration ; ne pas les déclarer présents sans vérification.
 
 ## TH — Théâtre grec
