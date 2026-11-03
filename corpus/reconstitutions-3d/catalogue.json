@@ -2,7 +2,7 @@
   "collection": "MYTHOS — Reconstitutions 3D",
   "version": "2026-11-03",
   "scope": "Grèce antique",
-  "image_policy": "Illustrations vectorielles originales en perspective 2,5D, sans menu de navigation. Les planches photoréalistes de prévisualisation peuvent être distinctes des SVG publiés. Distinguer les vestiges attestés, les phases chronologiques et les hypothèses. Pas de modèle 3D interactif. Les deux illustrations de Brauron sont des SVG originaux à perspective simulée, non une planche photographique ni un modèle 3D interactif.",
+  "image_policy": "Illustrations vectorielles originales en perspective 2,5D, sans menu de navigation. Les planches photoréalistes de prévisualisation peuvent être distinctes des SVG publiés. Distinguer les vestiges attestés, les phases chronologiques et les hypothèses. Pas de modèle 3D interactif. Les deux illustrations de Brauron sont des SVG originaux à perspective simulée, non une planche photographique ni un modèle 3D interactif. Les notices BAS-001 et BAS-002 sont des perspectives SVG originales schématiques : aucun levé métrique, aucune photographie antique, aucune maquette 3D interactive.",
   "entries": [
     {
       "id": "DEL-001",
@@ -600,6 +600,86 @@
         "/grande-encyclopedie.html"
       ],
       "publication_note": "SVG original en perspective 2,5D ; les statues et autres décors spécifiques non conservés ne sont pas revendiqués comme attestés."
+    },
+    {
+      "id": "BAS-001",
+      "slug": "bassae-apollon-epikourios-temple-dorique",
+      "region": "Péloponnèse",
+      "subregion": "Arcadie antique — secteur de Phigalie (administration actuelle : Messénie)",
+      "site": "Bassae",
+      "monument": "Temple d’Apollon Épikourios — extérieur",
+      "period": "Fin du Ve siècle av. J.-C., généralement vers 420–400 av. J.-C. (datations discutées)",
+      "image": "/assets/reconstitutions/bassae-apollon-exterieur-ve-siecle.svg",
+      "image_type": "Illustration vectorielle originale en perspective simulée 2,5D ; non métrique et non interactive",
+      "attested": [
+        "Temple dorique périptère, six colonnes en façade et quinze sur les grands côtés (38 colonnes au total)",
+        "Orientation générale nord–sud avec entrée principale au nord et ouverture orientale vers l'adyton",
+        "Stylobate d'environ 38,24 × 14,48 mètres ; calcaire local gris",
+        "Sanctuaire rural d'Apollon Épikourios, inscrit au patrimoine mondial depuis 1986"
+      ],
+      "hypothetical": [
+        "Hauteur exacte de l'élévation complète, appareillages restitués et couverture",
+        "Polychromie, aménagements périphériques et végétation",
+        "Perspective et relief du paysage simplifiés, non métriques"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "colonnade": "élevée",
+        "paysage": "faible",
+        "toitures_et_couleurs": "faible_à_moyenne"
+      },
+      "sources": [
+        "https://whc.unesco.org/fr/list/392/",
+        "https://apollotemple.ilia-olympia.org/en/home-2/",
+        "https://perseus-aa.github.io/items/aa_88.html",
+        "https://www.theoi.com/Text/Pausanias8C.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/bassae.html#architecture",
+        "/reconstitutions-3d.html#bas-001",
+        "/grande-encyclopedie.html"
+      ],
+      "publication_note": "SVG publié en dépôt si commit validé ; planche photoréaliste conversationnelle distincte et non transférée au dépôt."
+    },
+    {
+      "id": "BAS-002",
+      "slug": "bassae-cella-ionique-colonne-corinthienne",
+      "region": "Péloponnèse",
+      "subregion": "Arcadie antique — Phigalie",
+      "site": "Bassae",
+      "monument": "Cella, frise ionique et accès à l’adyton",
+      "period": "Fin du Ve siècle av. J.-C., probablement vers 420–400 av. J.-C.",
+      "image": "/assets/reconstitutions/bassae-cella-ionique-corinthien.svg",
+      "image_type": "Schéma vectoriel de coupe perspective 2,5D, non métrique, sans modèle interactif",
+      "attested": [
+        "Cella avec cinq supports ioniques engagés dans les murs sur chaque côté",
+        "Colonne d'axe à chapiteau corinthien parmi les plus anciens attestés, au passage vers l'adyton",
+        "Frise ionique à reliefs de combats mythologiques (Grecs et Amazones ; Lapithes et Centaures)",
+        "Ouverture secondaire vers l'est dans la zone de l'adyton, interprétation fonctionnelle discutée"
+      ],
+      "hypothetical": [
+        "Disposition et continuité dessinées du décor, couleurs et hauteur des élévations",
+        "Perspective visuelle simplifiée qui ne remplace pas le plan de fouille",
+        "Destination exacte de l'adyton, statue éventuelle et éclairage précis inconnus"
+      ],
+      "certainty": {
+        "ordre_et_supports": "élevée",
+        "emplacement_frise": "élevée",
+        "polychromie": "faible",
+        "ambiance_et_fonction": "hypothétique"
+      },
+      "sources": [
+        "https://whc.unesco.org/fr/list/392/",
+        "https://apollotemple.ilia-olympia.org/en/home-2/",
+        "https://perseus-aa.github.io/items/aa_88.html",
+        "https://museum.classics.cam.ac.uk/collections/casts/bassae-temple-apollo-epikourios-frieze"
+      ],
+      "historical_crosslinks": [
+        "/sites/bassae.html#interieur",
+        "/reconstitutions-3d.html#bas-002",
+        "/mythologie-grecque.html"
+      ],
+      "publication_note": "Schéma numérique original ; le chapiteau et les scènes de la frise sont stylisés, sans reproduire leurs reliefs à l'identique."
     }
   ]
 }
