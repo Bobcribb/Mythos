@@ -2,7 +2,7 @@
   "collection": "MYTHOS — Reconstitutions 3D",
   "version": "2026-11-03",
   "scope": "Grèce antique",
-  "image_policy": "Illustrations vectorielles schématiques 2,5D, sans menu de navigation à l'intérieur des images ; ne pas présenter comme photogrammétrie, maquette 3D interactive ou restitution archéologique certaine. Distinguer à chaque notice les données attestées des hypothèses.",
+  "image_policy": "Illustrations originales en perspective simulée 2,5D, sans menu de navigation dans les images. Distinguer strictement les vestiges attestés, les phases chronologiques et les hypothèses de restitution. Les illustrations ne sont ni des modèles 3D interactifs ni de la photogrammétrie.",
   "entries": [
     {
       "id": "DEL-001",
@@ -141,6 +141,80 @@
       "historical_crosslinks": [
         "/sites/nemee.html#stade",
         "/reconstitutions-3d.html#nem-002",
+        "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "COR-001",
+      "slug": "corinthe-temple-apollon-540",
+      "region": "Péloponnèse",
+      "subregion": "Corinthie",
+      "site": "Corinthe",
+      "monument": "Temple archaïque d'Apollon",
+      "period": "Vers 540 av. J.-C.",
+      "image": "/assets/reconstitutions/corinthe-apollon-540-av-jc.svg",
+      "image_type": "Illustration vectorielle originale en perspective simulée 2,5D sans menu de navigation",
+      "attested": [
+        "Temple dorique périptère de 6 × 15 colonnes",
+        "Fûts monolithes de calcaire local",
+        "Stylobate d'environ 53,82 × 21,48 m",
+        "Sept colonnes conservées en élévation"
+      ],
+      "hypothetical": [
+        "Reconstitution complète de l'élévation et de la toiture",
+        "Teintes, décor et implantation des silhouettes",
+        "Perspective et reliefs non métriques"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "ordre_et_colonnes": "élevée",
+        "élévation": "moyenne",
+        "polychromie": "faible"
+      },
+      "sources": [
+        "https://www.corinthcomputerproject.org/records/temple-apollo/",
+        "https://ascsa.org/excavations/ancient-corinth/about-the-excavations-1"
+      ],
+      "historical_crosslinks": [
+        "/sites/corinthe.html#apollon",
+        "/reconstitutions-3d.html#cor-001",
+        "/grande-encyclopedie.html"
+      ]
+    },
+    {
+      "id": "COR-002",
+      "slug": "corinthe-fontaine-pirene-epoque-romaine",
+      "region": "Péloponnèse",
+      "subregion": "Corinthie",
+      "site": "Corinthe",
+      "monument": "Fontaine Pirène (état romain schématique)",
+      "period": "Époque impériale romaine, principalement IIe siècle apr. J.-C. ; éléments remaniés à plusieurs phases",
+      "image": "/assets/reconstitutions/corinthe-pirene-iie-siecle.svg",
+      "image_type": "Illustration vectorielle originale en perspective simulée 2,5D sans menu de navigation",
+      "attested": [
+        "Captages souterrains remontant à l'époque grecque",
+        "Six chambres de la fontaine",
+        "Façade romaine avec six baies cintrées à une phase documentée",
+        "Aménagements de bassin et marbres à plusieurs phases romaines",
+        "Pausanias II, 3, 2–3 décrit la fontaine au IIe siècle apr. J.-C."
+      ],
+      "hypothetical": [
+        "Combinaison graphique simplifiée d'éléments appartenant à différentes phases",
+        "Dimensions relatives, niveaux et couleurs",
+        "Organisation précise des alentours et personnages"
+      ],
+      "certainty": {
+        "structures": "élevée",
+        "datation_des_phases": "moyenne",
+        "état_visuel": "faible_à_moyenne"
+      },
+      "sources": [
+        "https://www.corinthcomputerproject.org/records/peirene-fountain/",
+        "https://www.theoi.com/Text/Pausanias2A.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/corinthe.html#pirene",
+        "/reconstitutions-3d.html#cor-002",
         "/grande-encyclopedie.html"
       ]
     }
