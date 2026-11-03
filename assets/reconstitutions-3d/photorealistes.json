@@ -9,5 +9,39 @@
     "created_at": "2026-11-03",
     "source_url": "https://whc.unesco.org/en/list/404/",
     "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
+  },
+  {
+    "slug": "delphes-apollon-panorama",
+    "title": "Delphes — panorama du sanctuaire d’Apollon",
+    "region": "Phocide, Grèce centrale",
+    "period": "Fin du IVe siècle av. J.-C. (évocation vers 325 av. J.-C.)",
+    "view_kind": "panorama",
+    "view_label": "Plan large panoramique",
+    "src": "/Mythos/assets/reconstitutions-3d/delphes-apollon-panorama.webp",
+    "created_at": "2026-11-04",
+    "caption": "Vue panoramique photoréaliste interprétative du sanctuaire d’Apollon à Delphes, au pied du Parnasse, vers la fin du IVe siècle av. J.-C. Le temple, la Voie sacrée, les terrasses et les ensembles monumentaux sont représentés dans leur paysage.",
+    "commentary": "Le temple d’Apollon, reconstruit vers 334–333 av. J.-C., dominait la Voie sacrée bordée de trésors et d’offrandes des cités grecques. Le sanctuaire s’étageait sur la pente au pied des Phédriades. Le théâtre et les autres constructions ont connu plusieurs phases : la scène proposée ne doit donc pas être lue comme une photographie d’un état historique unique.",
+    "limits": "Les portiques, toitures, statues, colonnades secondaires, voies, végétation, dimensions apparentes et états du théâtre sont largement interprétatifs. Cette image contemporaine ne constitue ni un relevé photogrammétrique ni une restitution archéologique validée.",
+    "certainty_notes": {
+      "eleve": "Topographie générale du sanctuaire, emplacement du temple d’Apollon et existence de la Voie sacrée.",
+      "moyen": "Organisation d’ensemble des terrasses et relations spatiales entre les principaux monuments.",
+      "faible": "Détails des façades, couleurs, portiques, sculptures, végétation et simultanéité des bâtiments figurés."
+    },
+    "certainty_level": "Élevée pour l’implantation générale ; moyenne pour l’organisation des terrasses ; faible pour les élévations, couleurs et décors.",
+    "source_url": "https://delphi.culture.gr/zone-archeologique/l-histoire/developpement-historique-des-delphes/",
+    "institutional_sources": [
+      {
+        "name": "Ministère grec de la Culture — évolution du sanctuaire",
+        "url": "https://delphi.culture.gr/zone-archeologique/l-histoire/developpement-historique-des-delphes/"
+      },
+      {
+        "name": "Ministère grec de la Culture — temple d’Apollon",
+        "url": "https://delphi.culture.gr/le-temple-dapollo/"
+      },
+      {
+        "name": "UNESCO — site archéologique de Delphes",
+        "url": "https://whc.unesco.org/fr/list/393/"
+      }
+    ]
   }
 ]

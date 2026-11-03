@@ -32,13 +32,6 @@ if source_url:
     entry["source_url"]=source_url
 items=[i for i in items if i["slug"]!=slug]+[entry]
 manifest.write_text(json.dumps(items,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-from html import escape
-cards="\n".join(
-    '<article><img loading="lazy" src="'+escape(i["src"],quote=True)+'" alt="'+escape(i["title"],quote=True)+'"><h2>'+escape(i["title"])+'</h2>'
-    +('<p>'+escape(" · ".join(filter(None,[i.get("region"),i.get("period")])))+'</p>' if i.get("region") or i.get("period") else '')
-    +('<p><a target="_blank" rel="noopener noreferrer" href="'+escape(i["source_url"],quote=True)+'">Source institutionnelle</a></p>' if i.get("source_url") else '')
-    +'</article>' for i in items
-)
-page='''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MYTHOS — Reconstitutions photoréalistes</title><style>body{margin:0;background:#0c0e10;color:#eee0c1;font-family:Georgia,serif}header{text-align:center;padding:3rem 1rem;border-bottom:1px solid #aa8744}h1,h2{color:#dfba71}main{max-width:1300px;margin:auto;padding:2rem 1rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.3rem}article{background:#17191b;border:1px solid #9b7b40;padding:1rem}img{display:block;width:100%;height:auto}a{color:#dfba71}</style></head><body><header><h1>MYTHOS — Reconstitutions 3D photoréalistes</h1><a href="/Mythos/reconstitutions-3d.html">Notices archéologiques</a></header><main>'''+cards+'''</main></body></html>'''
-(root/"reconstitutions-photorealistes.html").write_text(page,encoding="utf-8")
+from render_reconstitution_gallery import write_gallery
+write_gallery(root,items)
 print(dest)

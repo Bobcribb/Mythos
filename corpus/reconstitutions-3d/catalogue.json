@@ -5,6 +5,43 @@
   "image_policy": "Les schémas de restitution précédemment associés au catalogue ont été retirés. Seules des reconstitutions 3D photoréalistes vérifiées peuvent être publiées. Les notices scientifiques, datations, sources archéologiques et degrés de certitude restent disponibles; aucune image absente n'est annoncée comme publiée.",
   "entries": [
     {
+      "id": "DEL-PAN-001",
+      "slug": "delphes-apollon-panorama",
+      "region": "Grèce centrale",
+      "site": "Delphes",
+      "monument": "Panorama du sanctuaire d’Apollon",
+      "period": "Fin du IVe siècle av. J.-C. (évocation vers 325 av. J.-C.)",
+      "image": "/Mythos/assets/reconstitutions-3d/delphes-apollon-panorama.webp",
+      "image_type": "Reconstitution 3D photoréaliste interprétative (WebP, 1774 × 887 pixels)",
+      "image_status": "publiée_dans_dépôt__publication_publique_à_vérifier",
+      "caption": "Vue panoramique photoréaliste interprétative du sanctuaire d’Apollon à Delphes, au pied du Parnasse, vers la fin du IVe siècle av. J.-C. Le temple, la Voie sacrée, les terrasses et les ensembles monumentaux sont représentés dans leur paysage.",
+      "commentary": "Le temple d’Apollon, reconstruit vers 334–333 av. J.-C., dominait la Voie sacrée bordée de trésors et d’offrandes des cités grecques. Le sanctuaire s’étageait sur la pente au pied des Phédriades. Le théâtre et les autres constructions ont connu plusieurs phases : la scène proposée ne doit donc pas être lue comme une photographie d’un état historique unique.",
+      "attested": [
+        "Topographie du sanctuaire sur les pentes du Parnasse",
+        "Temple d’Apollon de la fin du IVe siècle av. J.-C.",
+        "Voie sacrée, monuments votifs, terrasses et théâtre attestés par les recherches archéologiques"
+      ],
+      "hypothetical": [
+        "Apparence exacte de tous les bâtiments à une même date",
+        "Toitures, polychromie, végétation, statues et éléments d’architecture secondaires",
+        "Dimensions relatives et disposition graphique du théâtre, qui a connu des remaniements postérieurs"
+      ],
+      "certainty": {
+        "implantation": "élevée",
+        "terrasses": "moyenne",
+        "élévations": "faible"
+      },
+      "sources": [
+        "https://delphi.culture.gr/zone-archeologique/l-histoire/developpement-historique-des-delphes/",
+        "https://delphi.culture.gr/le-temple-dapollo/",
+        "https://whc.unesco.org/fr/list/393/"
+      ],
+      "historical_crosslinks": [
+        "/sites/delphes.html#delphes-panorama",
+        "/reconstitutions-3d.html#del-pan-001"
+      ]
+    },
+    {
       "id": "DEL-001",
       "slug": "delphes-temple-apollon-330",
       "region": "Grèce centrale",
