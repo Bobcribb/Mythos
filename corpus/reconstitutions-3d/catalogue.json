@@ -2,7 +2,7 @@
   "collection": "MYTHOS — Reconstitutions 3D",
   "version": "2026-11-03",
   "scope": "Grèce antique",
-  "image_policy": "Illustrations vectorielles originales en perspective 2,5D, sans menu de navigation. Les planches photoréalistes de prévisualisation peuvent être distinctes des SVG publiés. Distinguer les vestiges attestés, les phases chronologiques et les hypothèses. Pas de modèle 3D interactif.",
+  "image_policy": "Illustrations vectorielles originales en perspective 2,5D, sans menu de navigation. Les planches photoréalistes de prévisualisation peuvent être distinctes des SVG publiés. Distinguer les vestiges attestés, les phases chronologiques et les hypothèses. Pas de modèle 3D interactif. Les deux illustrations de Brauron sont des SVG originaux à perspective simulée, non une planche photographique ni un modèle 3D interactif.",
   "entries": [
     {
       "id": "DEL-001",
@@ -440,6 +440,86 @@
         "/mythologie-grecque.html"
       ],
       "publication_note": "SVG schématique original publié dans le dépôt ; ne pas confondre avec une restitution archéologique métrique."
+    },
+    {
+      "id": "BRA-001",
+      "slug": "brauron-temple-artemis-ve-siecle",
+      "region": "Attique",
+      "subregion": "Brauron, côte orientale de l’Attique",
+      "site": "Brauron",
+      "monument": "Temple d’Artémis",
+      "period": "Fondations et plan attribués à l'époque archaïque tardive et classique ; état schématique du Ve siècle av. J.-C.",
+      "image": "/assets/reconstitutions/brauron-temple-artemis-ve-siecle.svg",
+      "image_type": "Illustration SVG originale, perspective 2,5D non métrique, sans menus, distincte de la planche photoréaliste générée en conversation",
+      "attested": [
+        "Plan d'environ 19,20 × 10,35 mètres ; cella et pronaos distyle in antis",
+        "Temple établi sur une terrasse, entrée vers l'est",
+        "Adyton ou espace arrière identifié dans l'analyse architecturale ; interprétation cultuelle discutée"
+      ],
+      "hypothetical": [
+        "Hauteur des murs, charpente, couverture et coloris",
+        "Apparence de la statue cultuelle, si figurée par l'artiste",
+        "Détails de paysage, végétation, proportions de la perspective"
+      ],
+      "certainty": {
+        "implantation": "élevée",
+        "plan": "élevée",
+        "datation_precise_des_phases": "moyenne",
+        "elevation_et_toiture": "faible_à_moyenne",
+        "couleurs": "faible"
+      },
+      "sources": [
+        "https://www.efaanat.gr/index.php/portfolio/iero-artemidos/",
+        "https://perseus-aa.github.io/items/aa_3886.html",
+        "https://perseus-aa.github.io/items/aa_93.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/brauron.html#temple",
+        "/reconstitutions-3d.html#bra-001",
+        "/mythologie-grecque.html"
+      ],
+      "publication_note": "SVG publié dans le dépôt GitHub. La planche photoréaliste produite dans la conversation n'a pas été chargée dans le dépôt."
+    },
+    {
+      "id": "BRA-002",
+      "slug": "brauron-stoa-425-av-jc",
+      "region": "Attique",
+      "subregion": "Brauron, côte orientale de l’Attique",
+      "site": "Brauron",
+      "monument": "Stoa classique de l’Artémision",
+      "period": "Vers 425–416 av. J.-C. ; aile nord documentée, ailes latérales non achevées",
+      "image": "/assets/reconstitutions/brauron-stoa-425-av-jc.svg",
+      "image_type": "Illustration originale SVG en perspective simulée 2,5D, sans menus ni relevé tridimensionnel scientifique",
+      "attested": [
+        "Stoa en Π autour de la cour sur les côtés ouest, nord et est",
+        "Onze colonnes doriques sur l'aile nord, d'environ 29,19 m de long",
+        "Salles de repas derrière les colonnades nord et ouest ; neuf salles relevées",
+        "Ailes occidentale et orientale demeurées inachevées selon les études architecturales"
+      ],
+      "hypothetical": [
+        "Toitures, élévations exactes et mobilier des pièces",
+        "Présentation en ruine basse des ailes inachevées, solution graphique non métrique",
+        "Rôle d'hébergement des jeunes filles non démontré par le plan seul",
+        "Végétation, teintes et topographie de la scène"
+      ],
+      "certainty": {
+        "implantation_et_plan": "élevée",
+        "nombre_de_colonnes_nord": "élevée",
+        "etat_d_achevement": "élevée",
+        "fonction_de_logement": "hypothétique",
+        "elevations_et_couleurs": "faible"
+      },
+      "sources": [
+        "https://www.efaanat.gr/index.php/portfolio/iero-artemidos/",
+        "https://perseus-aa.github.io/items/aa_3886.html",
+        "https://perseus-aa.github.io/items/aa_91.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/brauron.html#stoa",
+        "/reconstitutions-3d.html#bra-002",
+        "/mythologie-grecque.html"
+      ],
+      "publication_note": "Le SVG est l'illustration publiée; la planche photoréaliste originale n'a pas été chargée sur le site."
     }
   ]
 }
