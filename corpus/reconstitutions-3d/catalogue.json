@@ -289,6 +289,80 @@
         "/reconstitutions-3d.html#sou-002",
         "/mythologie-grecque.html"
       ]
+    },
+    {
+      "id": "AEG-001",
+      "slug": "egine-aphaia-temple-500",
+      "region": "Îles grecques",
+      "subregion": "Golfe Saronique",
+      "site": "Égine — sanctuaire d'Aphaia",
+      "monument": "Temple dorique d'Aphaia",
+      "period": "Vers 500–490 av. J.-C.",
+      "image": "/assets/reconstitutions/egine-aphaia-temple-500-av-jc.svg",
+      "image_type": "Dessin vectoriel original en perspective simulée 2,5D, sans menu ni modèle 3D interactif",
+      "attested": [
+        "Péristyle dorique 6 × 12 (32 colonnes)",
+        "Stylobate approximativement 28,8 × 13,7 mètres",
+        "Sanctuaire réaménagé au début du Ve siècle av. J.-C."
+      ],
+      "hypothetical": [
+        "Toiture et couleurs restituées",
+        "Relief, végétation et disposition exacte des aménagements illustrés",
+        "Perspective non métrique"
+      ],
+      "certainty": {
+        "plan": "élevée",
+        "ordre_et_colonnade": "élevée",
+        "toiture": "moyenne",
+        "polychromie_et_paysage": "faible"
+      },
+      "sources": [
+        "https://www.hh.gr/en/destinations/aphaia-temple/",
+        "https://webhelper.brown.edu/joukowsky/courses/greekpast/4775.html",
+        "https://perseus-aa.github.io/items/aa_3876.html"
+      ],
+      "historical_crosslinks": [
+        "/sites/egine-aphaia.html#architecture",
+        "/reconstitutions-3d.html#aeg-001",
+        "/mythologie-grecque.html"
+      ]
+    },
+    {
+      "id": "AEG-002",
+      "slug": "egine-aphaia-frontons-troie",
+      "region": "Îles grecques",
+      "subregion": "Golfe Saronique",
+      "site": "Égine — sanctuaire d'Aphaia",
+      "monument": "Frontons à sujet troyen (schéma, non une copie)",
+      "period": "Vers 500–480 av. J.-C. ; styles et phases distincts",
+      "image": "/assets/reconstitutions/egine-aphaia-fronton-sculpte.svg",
+      "image_type": "Schéma iconographique original vectoriel ; dessin des guerriers non archéologiquement positionnel",
+      "attested": [
+        "Athéna centrale dans les scènes de bataille de Troie",
+        "Sculptures des frontons conservées à la Glyptothèque de Munich",
+        "Passage du style archaïque au premier style classique"
+      ],
+      "hypothetical": [
+        "Postures, nombres et positions des personnages dans le dessin",
+        "Formes des costumes et des équipements",
+        "Palette de couleurs de la scène originale MYTHOS"
+      ],
+      "certainty": {
+        "themes": "élevée",
+        "existence_des_statues": "élevée",
+        "dessin_et_agencement": "faible",
+        "couleurs": "faible"
+      },
+      "sources": [
+        "https://museum.classics.cam.ac.uk/collections/casts/aegina-pediments",
+        "https://www.hh.gr/en/destinations/aphaia-temple/",
+        "https://digitalmuret.inha.fr/s/digital-muret/agorha/258592"
+      ],
+      "historical_crosslinks": [
+        "/sites/egine-aphaia.html#frontons",
+        "/reconstitutions-3d.html#aeg-002",
+        "/mythologie-grecque.html"
+      ]
     }
   ]
 }
