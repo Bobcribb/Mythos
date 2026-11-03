@@ -141,3 +141,14 @@ Les pages sont des documents HTML statiques **versionnés directement** dans `ma
 Le bandeau emploie le SVG existant `assets/mythos-hero.svg` (composition éditoriale statue grecque à gauche et temple stylisé à droite), dans une présentation noir et or. Les deux cartes utilisent le même motif, une à gauche et l'autre à droite. Les lecteurs contiennent une grille de navigation adaptée aux écrans étroits, un lien d'évitement et des repères de focus ; ces visuels sont contemporains et **ne représentent pas une reconstitution archéologique**.
 
 Contrôle avant déploiement : `scripts/check-lemniai.py`, branché dans `.github/workflows/pages.yml`, vérifie l'empreinte du manuscrit, la partition des sections, l'identité du texte lisible, la bibliographie, les liens et les ancres. **À vérifier après exécution du workflow** : succès de l'action et état effectif de la page publique. Les sources scientifiques sont citées dans le chapitre mais leur exactitude philologique doit faire l'objet d'une vérification distincte, non couverte par l'audit de transfert. Aucune archive n'a été supprimée et les autres automatisations MYTHOS ne sont pas modifiées.
+
+
+## 3 novembre 2026 — Gēras, La Vieillesse (Aristophane), volume historique XXXI
+
+**Inspection préalable :** le manuscrit `Bobcribb/Bobcribb.github.io/chapitres/comedies/volume-031-aristophane-geras.md` a été lu intégralement (blob Git `cacecbb6b24cfb736e33b4dbd092b7bb9c4b82a3`, 12197 caractères). Le dépôt courant ne possédait ni page de lecture ni archive de ce volume ; le volume XXX *Lemniai* était déjà publié et n'a pas été dupliqué.
+
+**Copie et classement :** [manuscrit Markdown original](comedies/geras-source.md) conservé exactement ; [TH-03-GER, étude documentaire, philologique et philosophique](comedies/geras-etude.html) : sections 1–16 et 20–22 (19 sections), avec préambule, tableau des preuves et bibliographie ; [TH-02-GER, créations modernes](comedies/geras-scenes-modernes.html) : trois scènes [C] (17–19), sans attribution antique. Les 22 corps des sections ainsi que le préambule ont été comparés au texte HTML lisible après interprétation des seuls marqueurs de style Markdown ; aucun résumé ne remplace les sections.
+
+**Interface :** sommaires cliquables, navigation étude/scènes, renvoi réciproque depuis *Lemniai*, accueil, Théâtre, Philosophie et sommaires HTML/Markdown. Bandeau SVG local `assets/mythos-hero.svg` (statue à gauche, temple à droite) étendu aux rubriques, cartes illustrées et responsive. La suite XXXII demeure signalée comme archive historique et non comme volume publié sur le nouveau site.
+
+**Garde-fou :** `scripts/check-geras.py` ajouté au workflow Pages. Contrôle source par Git SHA, 22/22 sections, distinction 19/3, sommaires et bibliographie. Cela vérifie la fidélité de la publication, pas l'authenticité des fragments antiques ni la totalité des références savantes. Aucune archive ni autre automatisation n'est modifiée.

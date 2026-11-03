@@ -33,6 +33,8 @@ jobs:
         run: python3 scripts/check-origines-conv-xxv-xxvi.py
       - name: Vérifier l'intégralité, les cotes et les sommaires de Lemniai
         run: python3 scripts/check-lemniai.py
+      - name: Vérifier l'intégrité du volume XXXI — Gēras
+        run: python3 scripts/check-geras.py
       - name: Vérifier les pages essentielles
         run: |
           test -s index.html

@@ -42,6 +42,8 @@ Les cotes éditoriales sont propres à chaque collection. La mythologie grecque 
 - **TH-02-HOL — *Holkades*, trois scènes contemporaines** : [créations distinctes](theatre-grec/comedies/holkades-scenes-modernes.html) ; [manuscrit historique intégral](theatre-grec/comedies/holkades-source.md).
 - **TH-03-LEM — Aristophane, *Lemniai* (Les Lemniennes)** : [étude critique intégrale de 19 sections](theatre-grec/comedies/lemniai-etude.html), avec bibliographie et degrés de certitude.
 - **TH-02-LEM — Trois scènes modernes [C]** : [créations contemporaines](theatre-grec/comedies/lemniai-scenes-modernes.html), distinctes de l’étude. [Manuscrit source historique complet (volume XXX)](theatre-grec/comedies/lemniai-source.md).
+- **TH-03-GER — Aristophane, *Gēras* (La Vieillesse), volume XXXI** : [étude intégrale, 19 sections](theatre-grec/comedies/geras-etude.html), sources et bibliographie.
+- **TH-02-GER — Gēras, trois scènes [C] contemporaines** : [scènes distinctes](theatre-grec/comedies/geras-scenes-modernes.html) ; [manuscrit historique original intégral, 22 sections](theatre-grec/comedies/geras-source.md).
 - Les textes perdus, fragments et reconstitutions doivent être signalés distinctement.
 
 ## PH — Philosophie
