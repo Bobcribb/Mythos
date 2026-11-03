@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/configure-pages@v5
       - name: Vérifier la syntaxe du générateur sans appel API
-        run: python3 -m py_compile scripts/generate_reconstitution.py
+        run: python3 -m py_compile scripts/generate_reconstitution.py scripts/import_reconstitution.py scripts/render_reconstitution_gallery.py
       - name: Vérifier les pages fondamentales
         run: |
           test -s index.html
