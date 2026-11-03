@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc"><title id="title">Göbekli Tepe : éléments architecturaux documentés</title><desc id="desc">Schéma pédagogique, non un plan à l'échelle, présentant les piliers en T monumentaux, l'enceinte et les reliefs animaliers de Göbekli Tepe.</desc><rect width="1200" height="620" fill="#0d1315"/>
+<text x="600" y="67" font-family="Georgia,serif" font-size="39" fill="#f0d4a6" text-anchor="middle">Göbekli Tepe · architecture monumentale</text>
+<text x="600" y="112" font-family="Arial,sans-serif" font-size="22" fill="#d7c8b4" text-anchor="middle">Néolithique précéramique · env. 9600–8200 av. n. è.</text>
+<ellipse cx="395" cy="327" rx="304" ry="181" fill="#1d282a" stroke="#ae8d59" stroke-width="16"/>
+<ellipse cx="395" cy="327" rx="260" ry="146" fill="none" stroke="#73604b" stroke-width="2" stroke-dasharray="10 7"/>
+<g fill="#cdb487" stroke="#65523a" stroke-width="5">
+<path d="M260 265h93v30h-27v90h-39v-90h-27z"/><path d="M437 265h93v30h-27v90h-39v-90h-27z"/>
+<path d="M176 323h64v19h-21v47h-22v-47h-21z"/><path d="M548 323h64v19h-21v47h-22v-47h-21z"/>
+</g>
+<g stroke="#b7a17d" stroke-width="3"><path d="M168 211l-46-27"/><path d="M622 413l52 36"/></g>
+<g font-family="Arial,sans-serif" fill="#ece2d3" font-size="22"><text x="740" y="235">Piliers calcaires en T</text><text x="740" y="283">Enceintes monumentales</text><text x="740" y="331">Reliefs d’animaux et</text><text x="740" y="359">détails anthropomorphes</text><text x="740" y="421">Interprétations rituelles :</text><text x="740" y="450">hypothèses de recherche</text></g>
+<text x="395" y="536" text-anchor="middle" font-family="Arial,sans-serif" fill="#d7c8b4" font-size="18">Disposition illustrative, non plan du site ni restitution 3D</text><text x="600" y="590" fill="#b5a996" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">MYTHOS · schéma interprétatif original · 3 novembre 2026 · assistance IA · non historique</text></svg>
