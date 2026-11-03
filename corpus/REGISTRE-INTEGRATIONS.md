@@ -80,3 +80,16 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Contrôle d'intégrité :** l'HTML précédent a été conservé **à l'identique** hors insertion d'une figure `<figure>` avec lien SVG, `<img>` doté de texte alternatif et dimensions, sources, datation de création (2026), légende et déclaration d'assistance IA. Chacune des trois pages comporte maintenant **8 figures**, soit **24 figures au total pour ces trois monographies**. Les six fichiers (trois HTML et trois SVG) ont été relus depuis GitHub après écriture. Aucun titre, texte préexistant, identifiant de section, sommaire, numérotation ni automatisation n'a été modifié.
 
 **Limites de ce contrôle :** sections ≠ pages imprimées ; le minimum de dix pages A4 doit être vérifié en sortie PDF/navigateur. L'API GitHub atteste les fichiers et commits, non l'affichage public. Les tentatives de consultation de `bobmythos.fr` n'ont pas permis d'inspecter la page ou le SVG sur le domaine ; aucun état de déploiement public n'est certifié ici. Pour les prochaines exécutions, reprendre l'inventaire de chaque rubrique avant insertion et ne jamais dupliquer les figures existantes.
+
+
+## 3 novembre 2026 — Intégration contrôlée : tome XXX de la série MYTHOS-OS-CONV
+
+| Cote | Titre | Provenance | Page de lecture | Manuscrit conservé |
+|---|---|---|---|---|
+| ODS-CONV-XXX | Pierres sacrées, bétyles, météorites et images aniconiques, chapitres 379–386 | Bibliothèque : `MYTHOS_Origines_du_sacre_Tome_XXX_Ch379-386_2026-11-01.md`, version 1, manuscrit daté du 1er novembre 2026 | [Édition HTML](origines-du-sacre/conv-tome-XXX-chapitres-379-386.html) | [Markdown source exact](origines-du-sacre/conv-tome-XXX-chapitres-379-386.md) |
+
+**Vérification de la source :** lecture complète du fichier, 369 lignes, début et fin présents, huit en-têtes de chapitre (379 à 386), conclusion et section « SOURCES PRIMAIRES ET BIBLIOGRAPHIE CRITIQUE » identifiées ; 56 903 caractères de contenu textuel récupérés puis conservés en Markdown, sans réécriture. Le fichier HTML présente le contenu en blocs de lecture et renvoie au Markdown original pour une confrontation mot à mot. Les chapitres 379–386 appartiennent exclusivement à la série **MYTHOS-OS-CONV** et ne sont pas des subdivisions de MYTHOS-OS-LIB.
+
+**Navigation :** liens ajoutés dans `origines-du-sacre.html`, `sommaire-general.html` et `corpus/sommaire-general.md`. Sommaire de huit chapitres, ancres de conclusion et bibliographie, retour à la collection, lien au manuscrit source. Ni les archives ni les autres automatisations MYTHOS n'ont été modifiées.
+
+**Périmètre du contrôle :** intégrité de la copie source et présence des repères documentaires ; les références scientifiques individuelles ne sont pas toutes revérifiées ici. La disponibilité publique après déploiement reste à confirmer séparément. Le tome XXIX, chapitre 378, est seulement mentionné par la source : aucun faux lien de continuité n'a été créé.
