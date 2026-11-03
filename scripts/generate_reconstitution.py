@@ -42,7 +42,7 @@ prompt=(f"Photorealistic archaeological 3D-rendered reconstruction of {title}, {
 "historically informed reconstruction with conservative architectural assumptions, no modern buildings. "
 "No website menu, no interface, no labels, no logos, no captions, no infographic panels, no fantasy architecture. "
 "This is an interpretive artistic reconstruction, not a metrically exact survey.")
-payload={"model":"gpt-image-1","prompt":prompt,"size":"1536x1024","quality":"medium","output_format":"webp","output_compression":85,"n":1}
+payload={"model":"gpt-image-2","prompt":prompt,"size":"1536x1024","quality":"medium","output_format":"webp","output_compression":85,"n":1}
 req=urllib.request.Request("https://api.openai.com/v1/images/generations",data=json.dumps(payload).encode(),headers={"Authorization":"Bearer "+os.environ["OPENAI_API_KEY"],"Content-Type":"application/json"},method="POST")
 # Diagnose rate limiting versus billing/quota errors without displaying credentials.
 result = None
