@@ -63,3 +63,20 @@ Cette livraison appartient à la **série de suivi** des *Origines du sacré*. L
 **Vérifications effectuées :** URL du document source GitHub accessible dans le dépôt ; HTML récupéré de GitHub après création et comparé exactement à la chaîne écrite ; dix liens de sommaire pointent vers des en-têtes générés, dont huit chapitres. Index ODS, sommaire général et page d'accueil mis à jour. **Contrôles restant nécessaires :** bibliographie et identifications scientifiques, apparence navigateur, liens externes, déploiement sur `bobmythos.fr`.
 
 **Aucun doublon des tomes existants n'a été créé.** Les archives historiques I–XXVII restent inchangées.
+
+
+## 3 novembre 2026 — Iconographie des monographies, contrôle complémentaire
+
+**Base inspectée avant modification :** `philosophie-iliade.html`, `philosophie-odyssee.html`, `philosophie-theogonie.html`, tous présents sur la branche par défaut avec respectivement 12, 12 et 13 sections et **7 figures HTML chacun**. Les images et schémas déjà présents ont été identifiés avant tout ajout ; aucune ancienne figure n'a été remplacée.
+
+**Trois nouvelles figures vectorielles intégrées et relues après commit :**
+
+| Page et chapitre | Fichier SVG ajouté | Source primaire vérifiée | Nature documentaire |
+| --- | --- | --- | --- |
+| *Iliade*, étude 09 (bouclier d'Achille) | `assets/philosophie/iliade-bouclier-monde.svg` | Homère, *Iliade* XVIII, 478–608 ; [texte de référence](https://www.theoi.com/Text/HomerIliad18.html) | Schéma conceptuel des motifs poétiques, **non** restitution archéologique ; assistance IA déclarée. |
+| *Odyssée*, analyse 02 (Télémachie) | `assets/philosophie/odyssee-telemachie-memoire.svg` | Homère, *Odyssée* I–IV, surtout III et IV ; [texte du chant III](https://www.theoi.com/Text/HomerOdyssey3.html), [chant IV](https://www.theoi.com/Text/HomerOdyssey4.html) | Schéma interprétatif de la mémoire et de l'action de Télémaque, **non** carte historique ; assistance IA déclarée. |
+| *Théogonie*, étude 11 (Zeus et Métis) | `assets/philosophie/theogonie-zeus-metis.svg` | Hésiode, *Théogonie* 886–900 ; [texte de référence](https://adfonteslibrary.org/work-hesiod-theogony) | Schéma analytique de la souveraineté et de la contrainte, **non** objet antique ; assistance IA déclarée. |
+
+**Contrôle d'intégrité :** l'HTML précédent a été conservé **à l'identique** hors insertion d'une figure `<figure>` avec lien SVG, `<img>` doté de texte alternatif et dimensions, sources, datation de création (2026), légende et déclaration d'assistance IA. Chacune des trois pages comporte maintenant **8 figures**, soit **24 figures au total pour ces trois monographies**. Les six fichiers (trois HTML et trois SVG) ont été relus depuis GitHub après écriture. Aucun titre, texte préexistant, identifiant de section, sommaire, numérotation ni automatisation n'a été modifié.
+
+**Limites de ce contrôle :** sections ≠ pages imprimées ; le minimum de dix pages A4 doit être vérifié en sortie PDF/navigateur. L'API GitHub atteste les fichiers et commits, non l'affichage public. Les tentatives de consultation de `bobmythos.fr` n'ont pas permis d'inspecter la page ou le SVG sur le domaine ; aucun état de déploiement public n'est certifié ici. Pour les prochaines exécutions, reprendre l'inventaire de chaque rubrique avant insertion et ne jamais dupliquer les figures existantes.
