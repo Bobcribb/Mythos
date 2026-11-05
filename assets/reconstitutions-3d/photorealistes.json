@@ -82,5 +82,18 @@
     "created_at": "2026-11-05",
     "source_url": "https://nemeacenter.berkeley.edu/ancient-nemea/temple-zeus",
     "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
+  },
+  {
+    "slug": "corinthe-apollon",
+    "title": "Corinthe — temple d'Apollon",
+    "region": "Corinthie",
+    "period": "vers 540 av. J.-C.",
+    "view_kind": "monument",
+    "view_label": "Vue architecturale",
+    "src": "/Mythos/assets/reconstitutions-3d/corinthe-apollon.webp",
+    "certainty": "Reconstitution interprétative : élévations et couleurs à vérifier",
+    "created_at": "2026-11-05",
+    "source_url": "https://www.ascsa.edu.gr/excavations/ancient-corinth/about-the-excavations-1",
+    "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
   }
 ]
