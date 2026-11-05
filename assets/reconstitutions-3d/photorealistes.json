@@ -108,5 +108,18 @@
     "created_at": "2026-11-05",
     "source_url": "https://www.ascsa.edu.gr/excavations/ancient-corinth/about-the-excavations-1",
     "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
+  },
+  {
+    "slug": "messene-asklepieion",
+    "title": "Messène — Asclépieion",
+    "region": "Messénie",
+    "period": "IIIe siècle av. J.-C.",
+    "view_kind": "monument",
+    "view_label": "Vue architecturale",
+    "src": "/Mythos/assets/reconstitutions-3d/messene-asklepieion.webp",
+    "certainty": "Reconstitution interprétative : élévations et couleurs à vérifier",
+    "created_at": "2026-11-05",
+    "source_url": null,
+    "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
   }
 ]
