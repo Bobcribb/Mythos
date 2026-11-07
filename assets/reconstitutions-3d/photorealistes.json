@@ -173,5 +173,18 @@
     "created_at": "2026-11-07",
     "source_url": null,
     "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
+  },
+  {
+    "slug": "brauron-artemis-panorama",
+    "title": "Brauron — sanctuaire d'Artémis — plan large du site",
+    "region": "Attique",
+    "period": "Ve siècle av. J.-C.",
+    "view_kind": "panorama",
+    "view_label": "Plan large panoramique",
+    "src": "/Mythos/assets/reconstitutions-3d/brauron-artemis-panorama.webp",
+    "certainty": "Reconstitution interprétative : élévations et couleurs à vérifier",
+    "created_at": "2026-11-07",
+    "source_url": null,
+    "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
   }
 ]
