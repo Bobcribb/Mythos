@@ -160,5 +160,18 @@
     "created_at": "2026-11-06",
     "source_url": "https://perseus-aa.github.io/items/aa_373.html",
     "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
+  },
+  {
+    "slug": "brauron-artemis",
+    "title": "Brauron — sanctuaire d'Artémis",
+    "region": "Attique",
+    "period": "Ve siècle av. J.-C.",
+    "view_kind": "monument",
+    "view_label": "Vue architecturale",
+    "src": "/Mythos/assets/reconstitutions-3d/brauron-artemis.webp",
+    "certainty": "Reconstitution interprétative : élévations et couleurs à vérifier",
+    "created_at": "2026-11-07",
+    "source_url": null,
+    "certainty_level": "Moyen pour la topographie, faible pour les élévations restituées"
   }
 ]
